@@ -25,3 +25,11 @@ yarn build
 aero deploy
 // go to https://train-check-3.aerobatic.io
 ```
+
+## where to deploy
+
+For now, I'm using aerobatic. But there are also these options:
+
+- now.sh
+- surge
+- gitlab
