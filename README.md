@@ -33,3 +33,7 @@ For now, I'm using aerobatic. But there are also these options:
 - now.sh
 - surge
 - gitlab
+
+## iphone/ios recognitions
+
+Here are some times on splash screens: https://gist.github.com/tfausak/2222823
