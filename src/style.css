@@ -1,7 +1,94 @@
-h1, p, body {
+body {
   font-family: Lato, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0px;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+div {
+  animation: fadein 0.5s;
+}
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+h1 {
+  margin: 0px;
+  vertical-align: text-top;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+div.nav {
+  padding: 8px;
+  box-shadow: 0px 3px 20px 0px #888888;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0px;
+}
+
+div.nav-container {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  margin: auto; 
+}
+
+div.main-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 80px auto 0px auto;
+}
+
+div.card {
+  margin: 15px 8px;
+  padding: 8px;
+  box-shadow: 0px 0px 10px 0px #888888;
+  border-radius: 2px;
+  background-color: white;
+}
+
+ul {
+  column-count: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  font-size: 120%;
+  font-size: 150%;
+  margin: 10px 0px;
+}
+
+/* infographics */
+
+rect {
+  fill: #ed3d3f;
+}
+
+circle.before {
+  fill: #edaf3f;
+}
+
+circle.final {
+  fill: #31a5d7;
+}
+
+table {
+  margin: 10px 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  width: 25%;
+  text-align: center;
 }

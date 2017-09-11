@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import LineStationPicker from './components/LineStationPicker';
+import StationInfo from './components/StationInfo';
+import {Helmet} from "react-helmet";
 import 'whatwg-fetch'; //use fetch polyfill
+import 'font-awesome/css/font-awesome.css';
+import 'normalize.css/normalize.css';
 import './style.css';
+import logo from './logo.svg';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -13,10 +19,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Link to="/">Home</Link>
-        <Route path="/:line?/:station?" component={LineStationPicker} />
-        <Route path="/:line/:station" render={(props) =>
-          <h1>Chosen: {props.match.params.line}線 {props.match.params.station}駅</h1>} />
+        <Helmet><title>TrainCheck</title></Helmet>
+        <div className="nav">
+          <div className="nav-container">
+            <Link to="/"><img src={logo} style={{ maxWidth: "300px" }} alt={"TrainCheck"} /></Link>
+          </div>
+        </div>
+        <div className="main-container">
+          <Route path="/:line?/:station?" component={LineStationPicker} />
+          <Route path="/:line/:station" component={StationInfo} />
+        </div>
       </div>
     );
   }

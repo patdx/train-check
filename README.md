@@ -1,3 +1,5 @@
+  # developing
+  
   yarn start
     Starts the development server.
 
@@ -15,3 +17,11 @@ We suggest that you begin by typing:
 
   cd train-check-client-v3
   yarn start
+
+# deploying
+
+```
+yarn build
+aero deploy
+// go to https://train-check-3.aerobatic.io
+```

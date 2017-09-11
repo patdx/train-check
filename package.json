@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "lodash": "^4.17.4",
+    "normalize.css": "^7.0.0",
     "p-memoize": "^1.0.0",
     "path-to-regexp": "^2.0.0",
+    "promise-memoize": "^1.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.13",
     "whatwg-fetch": "^2.0.3"

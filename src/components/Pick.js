@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import pathToRegexp from 'path-to-regexp';
+import LoadingIcon from './LoadingIcon';
 import _ from 'lodash';
+import {Helmet} from "react-helmet";
 
 export default class Pick extends Component {
   constructor(props) {
@@ -37,7 +39,6 @@ export default class Pick extends Component {
     nextProps.optionsAsync.then(this.loadOptions);
   }
 
-
   render() {
     const reactProps = this.props;
     var urlFunc = pathToRegexp.compile(this.props.urlStyle);
@@ -50,28 +51,30 @@ export default class Pick extends Component {
     var optionRender = (i) => <Link to={makeUrl(i.id)} key={i.id}><li>{i.text}</li></Link>;
     var options = this.state.options.map(optionRender);
 
-    const ulStyle = { columnCount: 3, listStyleType: "none" };
-
     if (!this.props.selectedId && this.props.enabled) {
       //Active Control
       if (this.state.loading) {
-        return <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul style={ulStyle}><li>Loading...</li></ul></div>
+        return <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul><li><LoadingIcon /></li></ul></div>
       } else {
         return (
-          <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul style={ulStyle}>{options}</ul></div>
+          <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul>{options}</ul></div>
         )
       }
+    } else if (!this.props.enabled) {
+      //Disabled State
+      return (<div><h1 style={{ color: "gray" }}>{this.props.name}</h1></div>);
     } else {
-      //Item is Selected
+      //Item has SelectedId
       if (this.state.loading) {
         return (
-          <div><h1>{this.props.name}</h1></div>
+          <div><h1>{this.props.name} <LoadingIcon /></h1></div>
         )
       } else {
-        var selectedName = (this.props.selectedId) ? _.find(this.state.options,{id: this.props.selectedId}).text : null;
+        const selectedName = (this.props.selectedId) ? _.find(this.state.options, { id: this.props.selectedId }).text : null;
+        const titleHelmet = (selectedName) ? <Helmet><title>{selectedName}</title></Helmet> : null;
 
         return (
-          <div><h1>{this.props.name} <Link to={makeUrl()}>{selectedName}</Link></h1></div>
+          <div><h1>{this.props.name} <Link to={makeUrl()}>{selectedName}</Link>{titleHelmet}</h1></div>
         )
       }
     }
