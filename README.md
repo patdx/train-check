@@ -22,6 +22,16 @@ We suggest that you begin by typing:
 
 ```
 yarn build
+cd build
+now
+now alias
+// go to https://train-check.now.sh/
+```
+
+# deploying (old)
+
+```
+yarn build
 aero deploy
 // go to https://train-check-3.aerobatic.io
 ```
