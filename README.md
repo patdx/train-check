@@ -20,9 +20,9 @@ We suggest that you begin by typing:
 
 # deploying
 
+Using now.sh. While now.sh supports static sites, it doesn't support single-page applications in this mode. So now.sh is running in "node" mode.
+
 ```
-yarn build
-cd build
 now
 now alias
 // go to https://train-check.now.sh/
@@ -47,3 +47,7 @@ For now, I'm using aerobatic. But there are also these options:
 ## iphone/ios recognitions
 
 Here are some times on splash screens: https://gist.github.com/tfausak/2222823
+
+## future updates
+
+It would be nice to use the zeit next.js library to optimize for server-side rendering.

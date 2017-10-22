@@ -1,8 +1,0 @@
-id: d123907f-c46f-4cc5-b03a-d5948c749205
-deploy:
-  ignore: []
-  directory: build
-plugins:
-  - name: webpage
-    options:
-      pushState: true
