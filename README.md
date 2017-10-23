@@ -38,11 +38,13 @@ aero deploy
 
 ## where to deploy
 
-For now, I'm using aerobatic. But there are also these options:
+For now, I'm using now.sh. But the cold boot time seems really slow? There are also these options:
 
-- now.sh
+- now.sh 
 - surge
 - gitlab
+- https://www.netlify.com/features/
+- aerobatic (not free after trial)
 
 ## iphone/ios recognitions
 
