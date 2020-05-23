@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import pathToRegexp from 'path-to-regexp';
 import LoadingIcon from './LoadingIcon';
 import _ from 'lodash';
-import {Helmet} from "react-helmet";
+import { Helmet } from 'react-helmet';
 
 export default class Pick extends Component {
   constructor(props) {
@@ -14,27 +14,27 @@ export default class Pick extends Component {
       props.optionsAsync.then(this.loadOptions);
       this.state = {
         loading: true,
-        options: []
-      }
+        options: [],
+      };
     } else {
       this.state = {
         loading: false,
-        options: []
-      }
+        options: [],
+      };
     }
   }
 
   loadOptions(data) {
     this.setState({
       loading: false,
-      options: data
+      options: data,
     });
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
       loading: true,
-      options: []
+      options: [],
     });
     nextProps.optionsAsync.then(this.loadOptions);
   }
@@ -46,36 +46,71 @@ export default class Pick extends Component {
       var properties = reactProps.urlBaseParams || {};
       properties[reactProps.urlKey] = itemName;
       return urlFunc(properties);
-    }
+    };
 
-    var optionRender = (i) => <Link to={makeUrl(i.id)} key={i.id}><li>{i.text}</li></Link>;
+    var optionRender = (i) => (
+      <Link to={makeUrl(i.id)} key={i.id}>
+        <li>{i.text}</li>
+      </Link>
+    );
     var options = this.state.options.map(optionRender);
 
     if (!this.props.selectedId && this.props.enabled) {
       //Active Control
       if (this.state.loading) {
-        return <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul><li><LoadingIcon /></li></ul></div>
+        return (
+          <div>
+            <h1 style={{ color: 'red' }}>{this.props.name}</h1>
+            <ul>
+              <li>
+                <LoadingIcon />
+              </li>
+            </ul>
+          </div>
+        );
       } else {
         return (
-          <div><h1 style={{ color: "red" }}>{this.props.name}</h1><ul>{options}</ul></div>
-        )
+          <div>
+            <h1 style={{ color: 'red' }}>{this.props.name}</h1>
+            <ul>{options}</ul>
+          </div>
+        );
       }
     } else if (!this.props.enabled) {
       //Disabled State
-      return (<div><h1 style={{ color: "gray" }}>{this.props.name}</h1></div>);
+      return (
+        <div>
+          <h1 style={{ color: 'gray' }}>{this.props.name}</h1>
+        </div>
+      );
     } else {
       //Item has SelectedId
       if (this.state.loading) {
         return (
-          <div><h1>{this.props.name} <LoadingIcon /></h1></div>
-        )
+          <div>
+            <h1>
+              {this.props.name} <LoadingIcon />
+            </h1>
+          </div>
+        );
       } else {
-        const selectedName = (this.props.selectedId) ? _.find(this.state.options, { id: this.props.selectedId }).text : null;
-        const titleHelmet = (selectedName) ? <Helmet><title>{selectedName}</title></Helmet> : null;
+        const selectedName = this.props.selectedId
+          ? _.find(this.state.options, { id: this.props.selectedId }).text
+          : null;
+        const titleHelmet = selectedName ? (
+          <Helmet>
+            <title>{selectedName}</title>
+          </Helmet>
+        ) : null;
 
         return (
-          <div><h1>{this.props.name} <Link to={makeUrl()}>{selectedName}</Link>{titleHelmet}</h1></div>
-        )
+          <div>
+            <h1>
+              {this.props.name} <Link to={makeUrl()}>{selectedName}</Link>
+              {titleHelmet}
+            </h1>
+          </div>
+        );
       }
     }
   }
