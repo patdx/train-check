@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import pathToRegexp from 'path-to-regexp';
+import Link from 'next/link';
+import * as pathToRegexp from 'path-to-regexp';
 import LoadingIcon from './LoadingIcon';
 import _ from 'lodash';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
-export default class Pick extends Component {
+export default class Pick extends Component<
+  {
+    urlStyle: string;
+    [key: string]: any;
+  },
+  {
+    loading: boolean;
+    options: any[];
+  }
+> {
   constructor(props) {
     super(props);
     this.loadOptions = this.loadOptions.bind(this);
@@ -41,16 +50,20 @@ export default class Pick extends Component {
 
   render() {
     const reactProps = this.props;
-    var urlFunc = pathToRegexp.compile(this.props.urlStyle);
-    var makeUrl = function (itemName) {
+    var urlFunc = this.props.urlStyle
+      ? pathToRegexp.compile(this.props.urlStyle)
+      : undefined;
+    var makeUrl = function (itemName?: string) {
       var properties = reactProps.urlBaseParams || {};
       properties[reactProps.urlKey] = itemName;
-      return urlFunc(properties);
+      return urlFunc?.(properties);
     };
 
     var optionRender = (i) => (
-      <Link to={makeUrl(i.id)} key={i.id}>
-        <li>{i.text}</li>
+      <Link href={makeUrl(i.id) ?? ''} key={i.id}>
+        <a>
+          <li>{i.text}</li>
+        </a>
       </Link>
     );
     var options = this.state.options.map(optionRender);
@@ -98,15 +111,18 @@ export default class Pick extends Component {
           ? _.find(this.state.options, { id: this.props.selectedId }).text
           : null;
         const titleHelmet = selectedName ? (
-          <Helmet>
+          <Head>
             <title>{selectedName}</title>
-          </Helmet>
+          </Head>
         ) : null;
 
         return (
           <div>
             <h1>
-              {this.props.name} <Link to={makeUrl()}>{selectedName}</Link>
+              {this.props.name}{' '}
+              <Link href={makeUrl() ?? ''}>
+                <a>{selectedName}</a>
+              </Link>
               {titleHelmet}
             </h1>
           </div>

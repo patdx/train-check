@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
-import * as linesAPI from '../modules/linesAPI';
 import LoadingIcon from './LoadingIcon';
 import Trains from './Trains';
+import { getTrainsAsync } from '../services/lines-service';
 
-export default class StationInfo extends Component {
+export default class StationInfo extends Component<
+  {
+    match?: {
+      params?: any;
+    }
+  },
+  {
+    loading: boolean;
+    data?: {
+      trainsUp: any;
+      trainsDown: any;
+    };
+  }
+> {
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
-      data: null,
+      data: undefined,
     };
     this.handleData = this.handleData.bind(this);
 
-    const params = props.match.params;
-    linesAPI.getTrainsAsync(params.line, params.station).then(this.handleData);
+    const params = props.match?.params;
+    getTrainsAsync(params?.line, params?.station).then(this.handleData);
   }
   handleData(data) {
     console.log('data', data);
@@ -27,10 +40,10 @@ export default class StationInfo extends Component {
       return (
         <div>
           <div className="card">
-            <Trains name="Northbound" data={this.state.data.trainsUp} />
+            <Trains name="Northbound" data={this.state.data?.trainsUp} />
           </div>
           <div className="card">
-            <Trains name="Southbound" data={this.state.data.trainsDown} />
+            <Trains name="Southbound" data={this.state.data?.trainsDown} />
           </div>
         </div>
       );

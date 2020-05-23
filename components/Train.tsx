@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import TrainTicker from './TrainTicker';
+import { TrainModel } from '../interfaces/train-model';
 
-export default class Train extends Component {
+export default class Train extends Component<{
+  data: TrainModel;
+}> {
   render() {
     var train = this.props.data;
 

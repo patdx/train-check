@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class FontAwesome extends Component {
+export default class FontAwesome extends Component<{ name?: string }> {
   render() {
     return (
       <i

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Train from './Train';
+import { TrainModel } from '../interfaces/train-model';
 
-export default class Trains extends Component {
+export default class Trains extends Component<{
+  name: string;
+  data: TrainModel[]
+}> {
   render() {
     var trains = this.props.data.map(function (train) {
       return <Train data={train} key={train.no} />;
