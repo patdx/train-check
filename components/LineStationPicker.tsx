@@ -31,7 +31,7 @@ export default class LineStationPicker extends Component<{
         <div className="card">
           <Pick
             name="Station"
-            urlStyle={urlStyle}
+            urlStyle={urlStyle ?? ''}
             urlBaseParams={{ line: selectedLine }}
             urlKey={'station'}
             optionsAsync={getStationsAsync(selectedLine)}
