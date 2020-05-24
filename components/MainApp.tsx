@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 
 export const MainApp: NextPage = () => {
   const router = useRouter();
-  // const { pid } = router.query
+  const { line, station } = router.query;
 
   return (
     <Fragment>
@@ -37,11 +37,10 @@ export const MainApp: NextPage = () => {
         </div>
       </div>
       <div className="main-container">
-        <LineStationPicker />
-        <StationInfo />
-        {/* <Line */}
-        {/* <Route path="/:line?/:station?" component={LineStationPicker} /> */}
-        {/* <Route path="/:line/:station" component={StationInfo} /> */}
+        <LineStationPicker line={line} station={station} />
+        {Boolean(line && station) && (
+          <StationInfo line={line} station={station} />
+        )}
       </div>
     </Fragment>
   );

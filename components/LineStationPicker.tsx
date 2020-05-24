@@ -3,17 +3,16 @@ import Pick from './Pick';
 import { getLinesAsync, getStationsAsync } from '../services/lines-service';
 
 export default class LineStationPicker extends Component<{
+  line: any;
+  station: any;
+
   match?: {
-    params?: {
-      line: any;
-      station: any;
-    };
     path: string;
   };
 }> {
   render() {
-    var selectedLine = this.props.match?.params?.line;
-    var selectedStation = this.props.match?.params?.station;
+    var selectedLine = this.props.line;
+    var selectedStation = this.props.station;
     var urlStyle = this.props.match?.path;
 
     return (
