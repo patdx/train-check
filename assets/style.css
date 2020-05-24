@@ -1,19 +1,22 @@
 body {
-  font-family: Lato, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: Lato, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
+    'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   margin: 0px;
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
-div {
-  animation: fadein 0.5s;
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  div {
+    animation: fadein 0.5s;
+  }
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -39,7 +42,7 @@ div.nav-container {
   width: 100%;
   max-width: 600px;
   height: 50px;
-  margin: auto; 
+  margin: auto;
 }
 
 div.main-container {

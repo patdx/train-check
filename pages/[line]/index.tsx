@@ -1,3 +1,3 @@
-const AboutPage = () => <div>Nothing here</div>;
+import { MainApp } from '../../components/MainApp';
 
-export default AboutPage;
+export default MainApp;

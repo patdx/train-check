@@ -1,6 +1,6 @@
-//import pMemoize from 'p-memoize'; //use to only make each request just one time
 import memoizer from 'promise-memoize';
-const lineURL = "//train-check-server.herokuapp.com/line/";
+
+const lineURL = "/api/line/";
 
 export const getLinesAsync = memoizer(async function () {
   let result = await fetch(lineURL);

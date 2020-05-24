@@ -21,6 +21,7 @@ function processData(result) {
   });
 
   console.log(stationsNew);
+
   return stationsNew;
 }
 
@@ -37,9 +38,7 @@ export default function checkLine(req: NextApiRequest, _res: NextApiResponse) {
 
   var result = fetch(url)
     .then((res) => res.json())
-    .then(processData, () => console.log('something happened'));
+    .then((data) => processData(data));
 
   return result;
 }
-
-module.exports = checkLine;
