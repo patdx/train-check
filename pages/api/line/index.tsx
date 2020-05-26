@@ -1,6 +1,8 @@
+import { fetchJson } from '../../../utils/fetch-json';
+
 export default function () {
-  return fetch('https://www.train-guide.westjr.co.jp/api/v1/master.json')
-    .then((result) => result.json())
+  return fetchJson('https://www.train-guide.westjr.co.jp/api/v1/master.json')
+    .toPromise()
     .then(function (result) {
       var lines = result.data.lines;
       var keys = Object.keys(lines);

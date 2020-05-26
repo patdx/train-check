@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { fetchJson } from '../../../../../utils/fetch-json';
 
 const DIRECTION = {
   UP: 0,
@@ -178,12 +179,14 @@ function checkTrains(lineName, stationId) {
   //TODO: verify its a string and 4 digits long
 
   console.log('Loading...');
-  var stationsPromise = fetch(
+
+  var stationsPromise = fetchJson(
     `https://www.train-guide.westjr.co.jp/api/v1/${lineName}_st.json`
-  ).then((res) => res.json());
-  var trainsPromise = fetch(
+  ).toPromise();
+
+  var trainsPromise = fetchJson(
     `https://www.train-guide.westjr.co.jp/api/v1/${lineName}.json`
-  ).then((res) => res.json());
+  ).toPromise();
 
   return Promise.all([stationsPromise, trainsPromise]).then(function (result) {
     console.log('Station and Train Data Loaded!');

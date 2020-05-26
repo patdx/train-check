@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import Head from 'next/head';
 import LineStationPicker from './LineStationPicker';
-import StationInfo from './StationInfo';
+import { StationInfo } from './StationInfo';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 
@@ -12,16 +12,9 @@ export const MainApp: NextPage = () => {
 
   return (
     <Fragment>
-      <div>{JSON.stringify(router.query)}</div>
       <Head>
         <title>TrainCheck</title>
       </Head>
-      {/* <h1>Hello Next.js 👋</h1>
-      <p>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </p> */}
 
       <div className="nav">
         <div className="nav-container">

@@ -1,6 +1,7 @@
 //example: https://www.train-guide.westjr.co.jp/api/v1/hokurikubiwako_st.json
 
 import { NextApiRequest, NextApiResponse } from 'next';
+import { fetchJson } from '../../../../utils/fetch-json';
 
 function processData(result) {
   var stations = result.data.stations;
@@ -36,8 +37,8 @@ export default function checkLine(req: NextApiRequest, _res: NextApiResponse) {
 
   console.log('Loading...');
 
-  var result = fetch(url)
-    .then((res) => res.json())
+  var result = fetchJson(url)
+    .toPromise()
     .then((data) => processData(data));
 
   return result;
