@@ -1,26 +1,27 @@
-import memoizer from 'promise-memoize';
+import memoize from 'promise-memoize';
 import { fetchJson } from '../utils/fetch-json';
+import urlJoin from 'url-join';
 
-const lineURL = '/api/line/';
+export const getLinesAsync = memoize(async function () {
+  let result = await fetchJson('/api/line').toPromise();
 
-export const getLinesAsync = memoizer(async function () {
-  let result = await fetchJson(lineURL).toPromise();
-
-  return result.map((i: any) => {
-    return { text: i.name, id: i.id };
+  return result.map((item) => {
+    return { text: item.name, id: item.id };
   });
 });
 
-export const getStationsAsync = memoizer(async function (lineName) {
+export const getStationsAsync = memoize(async function (lineName) {
   if (!lineName) return [];
 
-  let result = await fetchJson(lineURL + lineName).toPromise();
-  return result.map((i) => {
-    return { text: i.name, id: i.code };
+  const result = await fetchJson(urlJoin('/api/line', lineName)).toPromise();
+  return result.map((item) => {
+    return { text: item.name, id: item.code };
   });
 });
 
 export async function getTrainsAsync(line: any, station: any) {
-  let resultJSON = await fetchJson(lineURL + line + '/' + station).toPromise();
-  return resultJSON;
+  const result = await fetchJson(
+    urlJoin('/api/line', line, station)
+  ).toPromise();
+  return result;
 }

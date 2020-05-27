@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
 import Head from 'next/head';
-import LineStationPicker from './LineStationPicker';
+import { LineStationPicker } from './LineStationPicker';
 import { StationInfo } from './StationInfo';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';

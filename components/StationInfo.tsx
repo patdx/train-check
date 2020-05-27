@@ -1,6 +1,6 @@
-import React, { Component, FunctionComponent } from 'react';
-import LoadingIcon from './LoadingIcon';
-import Trains from './Trains';
+import React, { FunctionComponent } from 'react';
+import { LoadingIcon } from './LoadingIcon';
+import { Trains } from './Trains';
 import { getTrainsAsync } from '../services/lines-service';
 import useSWR from 'swr';
 

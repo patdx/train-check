@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-import TrainTicker from './TrainTicker';
+import React, { FC } from 'react';
+import { TrainTicker } from './TrainTicker';
 import { TrainModel } from '../interfaces/train-model';
 
-export default class Train extends Component<{
+export const Train: FC<{
   data: TrainModel;
-}> {
-  render() {
-    var train = this.props.data;
+}> = ({ data }) => {
+  const train = data;
 
-    return (
-      <tr>
-        <td>
-          {train.type} to {train.boundFor}
-        </td>
-        <td>{train.delayStatus}</td>
-        <td>{train.nowPosition}</td>
-        <td>
-          <TrainTicker stationsAway={this.props.data.stationsAway} />
-        </td>
-      </tr>
-    );
-  }
-}
+  return (
+    <tr>
+      <td>
+        {train.type} to {train.boundFor}
+      </td>
+      <td>{train.delayStatus}</td>
+      <td>{train.nowPosition}</td>
+      <td>
+        <TrainTicker stationsAway={Number(data.stationsAway)} />
+      </td>
+    </tr>
+  );
+};

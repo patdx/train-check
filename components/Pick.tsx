@@ -1,49 +1,21 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import * as pathToRegexp from 'path-to-regexp';
 import React, { FunctionComponent } from 'react';
-import useSWR from 'swr';
-import LoadingIcon from './LoadingIcon';
-import { serializeError } from 'serialize-error';
+import urlJoin from 'url-join';
+import { LoadingIcon } from './LoadingIcon';
 
 export const Pick: FunctionComponent<{
   name: string;
-  urlStyle: string;
-  urlBaseParams?: any;
-  urlKey: string;
-  optionsAsync: () => Promise<any>;
+  options?: any[];
   selectedId: string;
   enabled: boolean;
-}> = ({
-  name,
-  urlStyle,
-  urlBaseParams,
-  urlKey,
-  optionsAsync,
-  selectedId,
-  enabled,
-}) => {
-  // useSWR()
-  const { data: options, error } = useSWR<any[]>(urlKey, optionsAsync);
-
+}> = ({ name, options, selectedId, enabled }) => {
   const loading = !options;
 
-  if (error) {
-    return <div>Error {JSON.stringify(serializeError(error))}</div>;
-  }
-
-  var urlFunc = urlStyle ? pathToRegexp.compile(urlStyle) : undefined;
-
-  var makeUrl = function (itemName?: string) {
-    var properties = urlBaseParams || {};
-    properties[urlKey] = itemName;
-    return urlFunc?.(properties);
-  };
-
-  const renderedOptions = options?.map((i) => (
-    <Link href={makeUrl(i.id) ?? ''} key={i.id}>
+  const renderedOptions = options?.map((option) => (
+    <Link href="/[line]" as={urlJoin('/', option.id)} key={option.id}>
       <a>
-        <li>{i.text}</li>
+        <li>{option.text}</li>
       </a>
     </Link>
   ));
@@ -101,7 +73,7 @@ export const Pick: FunctionComponent<{
         <div>
           <h1>
             {name}{' '}
-            <Link href={makeUrl() ?? ''}>
+            <Link href="/">
               <a>{selectedName}</a>
             </Link>
             {titleHelmet}

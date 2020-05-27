@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React, { FC } from 'react';
 
-export default class FontAwesome extends Component<{ name?: string }> {
-  render() {
-    return (
-      <i
-        className={'fa ' + this.props.name}
-        style={{ verticalAlign: 'middle' }}
-        aria-hidden="true"
-      />
-    );
-  }
-}
+export const FontAwesome: FC<{ name?: string }> = ({ name }) => {
+  return (
+    <i
+      className={'fa ' + name}
+      style={{ verticalAlign: 'middle' }}
+      aria-hidden="true"
+    />
+  );
+};
