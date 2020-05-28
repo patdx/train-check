@@ -1,5 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { fetchJson } from '../../../../../utils/fetch-json';
+import { forkJoin } from 'rxjs';
+import { StationsApi } from '../../../../../interfaces/stations-api';
+import { TrainsApi } from '../../../../../interfaces/trains-api';
 
 const DIRECTION = {
   UP: 0,
@@ -171,36 +174,36 @@ function getTrainDelays(stations, trains, stationCode) {
   return result;
 }
 
-function checkTrains(lineName, stationId) {
-  if (stationId == null) {
-    return Promise.reject('No station code specified');
+async function checkTrains(line: string, station: string) {
+  if (!station) {
+    throw new Error('No station code specified');
   }
 
   //TODO: verify its a string and 4 digits long
 
   console.log('Loading...');
 
-  var stationsPromise = fetchJson(
-    `https://www.train-guide.westjr.co.jp/api/v1/${lineName}_st.json`
-  ).toPromise();
+  const { stations, trains } = await forkJoin({
+    stations: fetchJson<StationsApi>(
+      `https://www.train-guide.westjr.co.jp/api/v3/${line}_st.json`
+    ),
+    trains: fetchJson<TrainsApi>(
+      `https://www.train-guide.westjr.co.jp/api/v3/${line}.json`
+    ),
+  }).toPromise();
 
-  var trainsPromise = fetchJson(
-    `https://www.train-guide.westjr.co.jp/api/v1/${lineName}.json`
-  ).toPromise();
+  console.log('Station and Train Data Loaded!');
 
-  return Promise.all([stationsPromise, trainsPromise]).then(function (result) {
-    console.log('Station and Train Data Loaded!');
-    const stations = result[0].data.stations;
-    const trains = result[1].data.trains;
-    return getTrainDelays(stations, trains, stationId);
-  });
+  return getTrainDelays(stations.stations, trains.trains, station);
 }
 
 //for testing
 //checkTrains("0397").then(result => { console.log(result) });
 
-export default function (req: NextApiRequest, _res: NextApiResponse) {
-  const { lineName, stationId } = req.query;
+export default async function (req: NextApiRequest, res: NextApiResponse) {
+  const { line, station } = req.query;
 
-  return checkTrains(lineName, stationId);
+  const result = await checkTrains(line as string, station as string);
+
+  return res.json(result);
 }

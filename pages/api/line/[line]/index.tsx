@@ -1,6 +1,7 @@
 //example: https://www.train-guide.westjr.co.jp/api/v1/hokurikubiwako_st.json
 
 import { NextApiRequest, NextApiResponse } from 'next';
+import { StationsApi } from '../../../../interfaces/stations-api';
 import { fetchJson } from '../../../../utils/fetch-json';
 
 export default async function checkLine(
@@ -17,15 +18,7 @@ export default async function checkLine(
 
   console.log('Loading...');
 
-  const data = await fetchJson<{
-    stations: {
-      info: {
-        name: string;
-        code: string;
-        stopTrains: number[];
-      };
-    }[];
-  }>(url).toPromise();
+  const data = await fetchJson<StationsApi>(url).toPromise();
 
   const stations = data.stations;
 

@@ -1,24 +1,18 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Children } from 'react';
 import urlJoin from 'url-join';
 import { LoadingIcon } from './LoadingIcon';
 
 export const Pick: FunctionComponent<{
   name: string;
-  options?: any[];
+  // options?: any[];
   selectedId: string;
   enabled: boolean;
-}> = ({ name, options, selectedId, enabled }) => {
-  const loading = !options;
+}> = ({ name, selectedId, enabled, children }) => {
+  const loading = !children || Children.count(children) === 0;
 
-  const renderedOptions = options?.map((option) => (
-    <Link href="/[line]" as={urlJoin('/', option.id)} key={option.id}>
-      <a>
-        <li>{option.text}</li>
-      </a>
-    </Link>
-  ));
+  // const renderedOptions =
 
   if (!selectedId && enabled) {
     //Active Control
@@ -37,7 +31,7 @@ export const Pick: FunctionComponent<{
       return (
         <div>
           <h1 style={{ color: 'red' }}>{name}</h1>
-          <ul>{renderedOptions}</ul>
+          <ul>{children}</ul>
         </div>
       );
     }
@@ -59,9 +53,10 @@ export const Pick: FunctionComponent<{
         </div>
       );
     } else {
-      const selectedName = selectedId
-        ? options?.find((item) => item.id === selectedId)?.text
-        : null;
+      const selectedName = undefined;
+      // const selectedName = selectedId
+      //   ? options?.find((item) => item.id === selectedId)?.text
+      //   : null;
 
       const titleHelmet = selectedName ? (
         <Head>
