@@ -1,6 +1,7 @@
-# TypeScript Next.js example
+# train-check
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+2020: Refreshed this old project to work with latest version of Next.js server and
+latest JR JSON data.
 
 ## Deploy your own
 
