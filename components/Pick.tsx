@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { FunctionComponent, Children } from 'react';
-import urlJoin from 'url-join';
+// import urlJoin from 'url-join';
 import { LoadingIcon } from './LoadingIcon';
 
 export const Pick: FunctionComponent<{
