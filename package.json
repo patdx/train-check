@@ -20,7 +20,7 @@
     "promise-memoize": "1.2.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "rxjs": "6.6.2",
+    "rxjs": "6.6.3",
     "swr": "0.3.2",
     "url-join": "4.0.1"
   },
