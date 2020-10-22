@@ -18,8 +18,8 @@
     "observable-hooks": "3.1.2",
     "path-to-regexp": "6.2.0",
     "promise-memoize": "1.2.1",
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "rxjs": "6.6.3",
     "swr": "0.3.6",
     "url-join": "4.0.1"
