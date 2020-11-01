@@ -21,7 +21,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "rxjs": "6.6.3",
-    "swr": "0.3.7",
+    "swr": "0.3.8",
     "url-join": "4.0.1"
   },
   "devDependencies": {
