@@ -33,7 +33,7 @@
     "@types/url-join": "4.0.0",
     "prettier": "2.2.1",
     "serialize-error": "8.0.1",
-    "typescript": "4.1.4"
+    "typescript": "4.1.5"
   },
   "license": "ISC"
 }
