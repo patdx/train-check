@@ -36,13 +36,13 @@ export class FetchErrorResponse extends BaseError {
 export const fetchJson = <T = any>(input: string | Request): Observable<T> => {
   return fromFetch(input).pipe(
     catchError((cause) => {
-      return throwError(new FetchErrorResponse({ input, cause }));
+      return throwError(() => new FetchErrorResponse({ input, cause }));
     }),
     switchMap((response) => {
       if (response.ok) {
         return response.json();
       } else {
-        return throwError(new FetchErrorResponse({ input, response }));
+        return throwError(() => new FetchErrorResponse({ input, response }));
       }
     })
   );

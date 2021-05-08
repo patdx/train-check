@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { fetchJson } from '../../../../../utils/fetch-json';
-import { forkJoin } from 'rxjs';
+import { forkJoin, firstValueFrom } from 'rxjs';
 import { StationsApi } from '../../../../../interfaces/stations-api';
 import { TrainsApi } from '../../../../../interfaces/trains-api';
 
@@ -183,14 +183,14 @@ async function checkTrains(line: string, station: string) {
 
   console.log('Loading...');
 
-  const { stations, trains } = await forkJoin({
+  const { stations, trains } = await firstValueFrom(forkJoin({
     stations: fetchJson<StationsApi>(
       `https://www.train-guide.westjr.co.jp/api/v3/${line}_st.json`
     ),
     trains: fetchJson<TrainsApi>(
       `https://www.train-guide.westjr.co.jp/api/v3/${line}.json`
     ),
-  }).toPromise();
+  }));
 
   console.log('Station and Train Data Loaded!');
 

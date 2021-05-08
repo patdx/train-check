@@ -3,6 +3,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { StationsApi } from '../../../../interfaces/stations-api';
 import { fetchJson } from '../../../../utils/fetch-json';
+import {firstValueFrom} from "rxjs";
 
 export default async function checkLine(
   req: NextApiRequest,
@@ -18,7 +19,7 @@ export default async function checkLine(
 
   console.log('Loading...');
 
-  const data = await fetchJson<StationsApi>(url).toPromise();
+  const data = await firstValueFrom(fetchJson<StationsApi>(url));
 
   const stations = data.stations;
 

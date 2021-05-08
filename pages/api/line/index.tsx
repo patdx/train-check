@@ -1,8 +1,9 @@
 import { fetchJson } from '../../../utils/fetch-json';
 import { NextApiRequest, NextApiResponse } from 'next';
+import { firstValueFrom } from 'rxjs';
 
 export default async function (_req: NextApiRequest, res: NextApiResponse) {
-  const result = await fetchJson<{
+  const result = await firstValueFrom(fetchJson<{
     lines: Record<
       string,
       {
@@ -12,7 +13,7 @@ export default async function (_req: NextApiRequest, res: NextApiResponse) {
     >;
   }>(
     'https://www.train-guide.westjr.co.jp/api/v3/area_kinki_master.json'
-  ).toPromise();
+  ));
 
   const lines = result.lines;
 
