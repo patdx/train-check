@@ -197,14 +197,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.6":
-  version: 17.0.6
-  resolution: "@types/react@npm:17.0.6"
+"@types/react@npm:*, @types/react@npm:17.0.7":
+  version: 17.0.7
+  resolution: "@types/react@npm:17.0.7"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: dcd8e559f758de7c856bd24136d9005e2b6fbae3d6d81704ba33c6a8ba787874f738b7aae8cfffd89ee35f05658800c43d7fdb9493b79c06a3bcdc1e37ea4635
+  checksum: 0b550ae747c254c8117cf92b99fb1e98ad71d073f0661d4119aa422487da06ab2f3e6e3523389ff3c54a0f2c59d9fb8f03e729001839490fcc473b0f7e275ff3
   languageName: node
   linkType: hard
 
@@ -604,8 +604,8 @@ __metadata:
   linkType: hard
 
 "cacache@npm:^15.0.5":
-  version: 15.1.0
-  resolution: "cacache@npm:15.1.0"
+  version: 15.2.0
+  resolution: "cacache@npm:15.2.0"
   dependencies:
     "@npmcli/move-file": ^1.0.1
     chownr: ^2.0.0
@@ -624,7 +624,7 @@ __metadata:
     ssri: ^8.0.1
     tar: ^6.0.2
     unique-filename: ^1.1.1
-  checksum: 620f1cc942f820ab701121237488a25b892516b18346b13a4e9028722f0e7c9e7b5f82dbaf1a19a97df5ae2b4b32fb223fc5e8670ae7b84d1ae3e0a71aeb473b
+  checksum: e7d6a93c34a409abb6050e4e09a103e859f0b53f592772a714e9e828f735cee8974cb36bd3e2d08fd78c2198d6d4b6005d0f1b3974e891a2ea4bd0ef02c80593
   languageName: node
   linkType: hard
 
@@ -3408,7 +3408,7 @@ typescript@4.2.4:
     "@types/lodash": 4.14.170
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.0
-    "@types/react": 17.0.6
+    "@types/react": 17.0.7
     "@types/react-dom": 17.0.5
     "@types/url-join": 4.0.0
     abort-controller: 3.0.0
