@@ -2250,14 +2250,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"observable-hooks@npm:4.0.3":
-  version: 4.0.3
-  resolution: "observable-hooks@npm:4.0.3"
+"observable-hooks@npm:4.0.4":
+  version: 4.0.4
+  resolution: "observable-hooks@npm:4.0.4"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
     rxjs: ">=6.0.0"
-  checksum: 5d2e3182a795b40280ef79522c3cb3ac8a4408b39eee487900ed28c607c9dfeee8590ed6007757e90f14dcae7c6c91454c754960decb55ae960ec73c186ffd12
+  checksum: f7fe4ae34299cad3244a436814bea872351d195bdb64c65c35dbaa3ef5cf5345c7851152e0cc1efedfcc0ea06f0d7f93e85f7512daf579c6ae68bf70d266b4ce
   languageName: node
   linkType: hard
 
@@ -3417,7 +3417,7 @@ typescript@4.2.4:
     make-error-cause: 2.3.0
     next: 10.2.3
     normalize.css: 8.0.1
-    observable-hooks: 4.0.3
+    observable-hooks: 4.0.4
     path-to-regexp: 6.2.0
     prettier: 2.3.1
     promise-memoize: 1.2.1
