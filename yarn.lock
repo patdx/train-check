@@ -181,14 +181,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.12":
-  version: 17.0.12
-  resolution: "@types/react@npm:17.0.12"
+"@types/react@npm:*, @types/react@npm:17.0.14":
+  version: 17.0.14
+  resolution: "@types/react@npm:17.0.14"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3cfa54700ec5a15ecfbe6e3f44864983768d3db1c1e88bf67fb0af689f8a14190b11ae2dfccebf36b8ad96b028909ea95c31dff36f4f582f4519f62e18d1164b
+  checksum: 3c5373845b0869d9ce3db16917c87707cdfdb6c08d9ca7ed90a2a097cb3cbec8d037d37e81c3cf5af721d92f8fdc62431405f1874f9a02dea6ec05e5d81e77fe
   languageName: node
   linkType: hard
 
@@ -3419,7 +3419,7 @@ typescript@4.2.4:
     "@types/lodash": 4.14.171
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.0
-    "@types/react": 17.0.12
+    "@types/react": 17.0.14
     "@types/react-dom": 17.0.9
     "@types/url-join": 4.0.0
     abort-controller: 3.0.0
