@@ -158,10 +158,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/promise-memoize@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@types/promise-memoize@npm:1.2.0"
-  checksum: 8d4a2144285f3893c4039f2348181c1febae076d99626dea3232b661f408795cc649840fe011a63276784d7a500489e9f9f4a8226cb004ff0c8f936c56f2e5bc
+"@types/promise-memoize@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@types/promise-memoize@npm:1.2.1"
+  checksum: f48759aabe9db6186e9fb71c25486de14be65779d39d85ffea60cbee3ad80d62603cd01b958ee233182d90277b92023c1c1a8693781e772707da014244debb20
   languageName: node
   linkType: hard
 
@@ -3418,7 +3418,7 @@ typescript@4.2.4:
   dependencies:
     "@types/lodash": 4.14.171
     "@types/node": 15.3.0
-    "@types/promise-memoize": 1.2.0
+    "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.14
     "@types/react-dom": 17.0.9
     "@types/url-join": 4.0.0
