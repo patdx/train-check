@@ -181,14 +181,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.14":
-  version: 17.0.14
-  resolution: "@types/react@npm:17.0.14"
+"@types/react@npm:*, @types/react@npm:17.0.15":
+  version: 17.0.15
+  resolution: "@types/react@npm:17.0.15"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3c5373845b0869d9ce3db16917c87707cdfdb6c08d9ca7ed90a2a097cb3cbec8d037d37e81c3cf5af721d92f8fdc62431405f1874f9a02dea6ec05e5d81e77fe
+  checksum: 427cca327d7a3c46af90e13ca3e1fe5e9c0dc1142df73c9b97c010ea420eb753776a58aec2e783fd669521dc87e89932bd17135fce2b2642aaa475216ac25914
   languageName: node
   linkType: hard
 
@@ -1903,8 +1903,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "minipass-fetch@npm:^1.3.2":
-  version: 1.3.3
-  resolution: "minipass-fetch@npm:1.3.3"
+  version: 1.3.4
+  resolution: "minipass-fetch@npm:1.3.4"
   dependencies:
     encoding: ^0.1.12
     minipass: ^3.1.0
@@ -1913,7 +1913,7 @@ fsevents@~2.3.1:
   dependenciesMeta:
     encoding:
       optional: true
-  checksum: cc93f86391795279b5681a2bbd5bb55cceabdae959c4ff0cb85e767427edb0d7e8bde49b6897afd386c2e47965ecc304b96bb7c2af0dbb9da7dfa67da140757e
+  checksum: c1a3d2b7a6082641601648ba309d1f878aaf6cb3f39f1468981dfe1fd30b96de8a0926128d4c2bff24aced21aff599f6fff8611a0084641d171063c6099d855d
   languageName: node
   linkType: hard
 
@@ -3099,8 +3099,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "tar@npm:^6.0.2, tar@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "tar@npm:6.1.0"
+  version: 6.1.1
+  resolution: "tar@npm:6.1.1"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -3108,7 +3108,7 @@ fsevents@~2.3.1:
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: d1d988eceb1ad2ecfaaf6fc5ecfe0c46fa005d04fe4c283355ccc52d3ffb4b6bf459a62f9ac7e36fd35251ab020399bdf527ab48b968120e06b4f61906a87d62
+  checksum: 8743d0909109f5914d83db068170374a123da7069f15fbc3e4dc4ee12cdac3bcf5f3b5cd550e8b97d488d7cad3f63e756b5c22643f05d253e392432883846004
   languageName: node
   linkType: hard
 
@@ -3419,7 +3419,7 @@ typescript@4.2.4:
     "@types/lodash": 4.14.171
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
-    "@types/react": 17.0.14
+    "@types/react": 17.0.15
     "@types/react-dom": 17.0.9
     "@types/url-join": 4.0.1
     abort-controller: 3.0.0
