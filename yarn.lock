@@ -144,10 +144,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.171":
-  version: 4.14.171
-  resolution: "@types/lodash@npm:4.14.171"
-  checksum: e48668fb030ad7d8c0c7751061bd332ad8704937d976bd4e24fd9e2128f80c17112be11e5c13d39f6a210336dc3549f7fb00eaebb56b94c2bfb89ad64c57d721
+"@types/lodash@npm:4.14.172":
+  version: 4.14.172
+  resolution: "@types/lodash@npm:4.14.172"
+  checksum: d4b9c66aa1775ca9105f95fdaf92b8c7ee646fcb75fa8c0617020456470b140f9204335a66e152f269f9cd531634ac3d0caa3f85ce3acdad9bc6951aa6e89aae
   languageName: node
   linkType: hard
 
@@ -3099,8 +3099,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "tar@npm:^6.0.2, tar@npm:^6.1.0":
-  version: 6.1.2
-  resolution: "tar@npm:6.1.2"
+  version: 6.1.3
+  resolution: "tar@npm:6.1.3"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -3108,7 +3108,7 @@ fsevents@~2.3.1:
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: 36dc986434c7519b5f07c901a0302927f2a5b3a2b9adb1b5a56db7a430db5eaf1be118b43aee860dde235239409003a02a97232326632f3753a6c7967b369c35
+  checksum: 0ae60629f50d59c1065e60aa072f5c343a3817645d4bf33691dbb71559a7ec47f44d95c1bbaaf41db37f5f59806044dee0149fdc206af642e65a3efb878c485f
   languageName: node
   linkType: hard
 
@@ -3416,7 +3416,7 @@ typescript@4.2.4:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:."
   dependencies:
-    "@types/lodash": 4.14.171
+    "@types/lodash": 4.14.172
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.15
