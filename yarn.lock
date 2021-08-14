@@ -181,14 +181,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.15":
-  version: 17.0.15
-  resolution: "@types/react@npm:17.0.15"
+"@types/react@npm:*, @types/react@npm:17.0.18":
+  version: 17.0.18
+  resolution: "@types/react@npm:17.0.18"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 427cca327d7a3c46af90e13ca3e1fe5e9c0dc1142df73c9b97c010ea420eb753776a58aec2e783fd669521dc87e89932bd17135fce2b2642aaa475216ac25914
+  checksum: 5ecd724f0da7c257b55a5f520824f93bc5df6820397fa6a0f8ca589d64f1fcf6b294d3f03d684fb47c7465701be94478d3bca3983085f3cc1f6bfeb4f6f90afd
   languageName: node
   linkType: hard
 
@@ -1280,10 +1280,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.2.6":
+"graceful-fs@npm:^4.1.2":
   version: 4.2.6
   resolution: "graceful-fs@npm:4.2.6"
   checksum: 84d39c7756892553da990a9db7e45f844b3309b37b5a00174cbb4748476f2250c54f24594d4d252f64f085c65c2fdac7c809419bf6d55f0e6e42eb07ac0f5bf2
+  languageName: node
+  linkType: hard
+
+"graceful-fs@npm:^4.2.6":
+  version: 4.2.8
+  resolution: "graceful-fs@npm:4.2.8"
+  checksum: b07e032c0a17e928d3e8ab0f0fea1492efd4568b55a3d2675aaaccf1619eca91156edfa0cb05e99b923e24edf5e26fdce22ffa58ec14d5b13a3b1392460f37f0
   languageName: node
   linkType: hard
 
@@ -2804,9 +2811,9 @@ fsevents@~2.3.1:
   linkType: hard
 
 "smart-buffer@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "smart-buffer@npm:4.1.0"
-  checksum: 00a23d82a20eced9622cbba18ba781f9f8968ccfa70af7a33336ae55f54651c073aa072084c521f7e78199767e5b3584a0bbf3a47bb60e3e5b79ea4fc1ca61a1
+  version: 4.2.0
+  resolution: "smart-buffer@npm:4.2.0"
+  checksum: 644e012e31a8e17334df717cd2337ad5339139c3f9354c1e52dbafe93e5cd19f89129a831833ad54002bd5872873ec9affcdfbc81ee41a0513ad39a0c9b6dad1
   languageName: node
   linkType: hard
 
@@ -3099,8 +3106,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "tar@npm:^6.0.2, tar@npm:^6.1.0":
-  version: 6.1.3
-  resolution: "tar@npm:6.1.3"
+  version: 6.1.8
+  resolution: "tar@npm:6.1.8"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -3108,7 +3115,7 @@ fsevents@~2.3.1:
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: 0ae60629f50d59c1065e60aa072f5c343a3817645d4bf33691dbb71559a7ec47f44d95c1bbaaf41db37f5f59806044dee0149fdc206af642e65a3efb878c485f
+  checksum: fce79e7f6e72bbaf41d2d902d6f6bd75bd1b8da6e89c2a024cf570e8e582b5df0754569cbd6df6e814f461481870ece19beef35b4719153ecff16c99e986f2ca
   languageName: node
   linkType: hard
 
@@ -3419,7 +3426,7 @@ typescript@4.2.4:
     "@types/lodash": 4.14.172
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
-    "@types/react": 17.0.15
+    "@types/react": 17.0.18
     "@types/react-dom": 17.0.9
     "@types/url-join": 4.0.1
     abort-controller: 3.0.0
