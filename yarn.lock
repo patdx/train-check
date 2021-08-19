@@ -214,14 +214,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.18":
-  version: 17.0.18
-  resolution: "@types/react@npm:17.0.18"
+"@types/react@npm:*, @types/react@npm:17.0.19":
+  version: 17.0.19
+  resolution: "@types/react@npm:17.0.19"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 5ecd724f0da7c257b55a5f520824f93bc5df6820397fa6a0f8ca589d64f1fcf6b294d3f03d684fb47c7465701be94478d3bca3983085f3cc1f6bfeb4f6f90afd
+  checksum: 369578687b39d66fafcb2e41b9e12a0aa0dda8db5661b68d4c9bd7679d3da96515c69905b1a882f2da01988104dca30d400811e1488ed146ac98d246e8e67695
   languageName: node
   linkType: hard
 
@@ -3103,8 +3103,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "tar@npm:^6.0.2, tar@npm:^6.1.0":
-  version: 6.1.8
-  resolution: "tar@npm:6.1.8"
+  version: 6.1.10
+  resolution: "tar@npm:6.1.10"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -3112,7 +3112,7 @@ fsevents@~2.3.1:
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: fce79e7f6e72bbaf41d2d902d6f6bd75bd1b8da6e89c2a024cf570e8e582b5df0754569cbd6df6e814f461481870ece19beef35b4719153ecff16c99e986f2ca
+  checksum: dfc35416b38945ad5d068fe6e9aa145cae93241f8ad680929a516a34b37a2f513ca25bbbea698451eb8983f27ce6f0ade0407f9329c0cc7c5a06f3e2e97ece29
   languageName: node
   linkType: hard
 
@@ -3423,7 +3423,7 @@ typescript@4.2.4:
     "@types/lodash": 4.14.172
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
-    "@types/react": 17.0.18
+    "@types/react": 17.0.19
     "@types/react-dom": 17.0.9
     "@types/url-join": 4.0.1
     abort-controller: 3.0.0
