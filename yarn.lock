@@ -69,6 +69,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gar/promisify@npm:^1.0.1":
+  version: 1.1.2
+  resolution: "@gar/promisify@npm:1.1.2"
+  checksum: 51f64c558516f776e2f8950fc70532a9a0d166a0493bf17b2c5b588f8f9ae6a6e80e330591554b52d97336094c6d4168b96972fb92ceb1e774176d79a0fbb236
+  languageName: node
+  linkType: hard
+
 "@hapi/accept@npm:5.0.2":
   version: 5.0.2
   resolution: "@hapi/accept@npm:5.0.2"
@@ -157,6 +164,16 @@ __metadata:
   dependencies:
     "@napi-rs/triples": ^1.0.3
   checksum: fd9a40320ed4b5dc8b7700d7e3d4c27a9fed1e218aa035fb72acf9c849443d4d7708cd3a21cbff3ac3ada1a10b31f26076810ab349448d5eba4ed8873f505c9e
+  languageName: node
+  linkType: hard
+
+"@npmcli/fs@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@npmcli/fs@npm:1.0.0"
+  dependencies:
+    "@gar/promisify": ^1.0.1
+    semver: ^7.3.5
+  checksum: 9be7dcf9915fc5ab0bbcd7efaefad5fda43ccf06a80d69f8aea3e34f54a75e51cee17b4b42b02fc85864a33e4017e1f4cc23b321058746d91249d8d4c4bb0a0f
   languageName: node
   linkType: hard
 
@@ -614,9 +631,10 @@ __metadata:
   linkType: hard
 
 "cacache@npm:^15.0.5":
-  version: 15.2.0
-  resolution: "cacache@npm:15.2.0"
+  version: 15.3.0
+  resolution: "cacache@npm:15.3.0"
   dependencies:
+    "@npmcli/fs": ^1.0.0
     "@npmcli/move-file": ^1.0.1
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -634,7 +652,7 @@ __metadata:
     ssri: ^8.0.1
     tar: ^6.0.2
     unique-filename: ^1.1.1
-  checksum: e7d6a93c34a409abb6050e4e09a103e859f0b53f592772a714e9e828f735cee8974cb36bd3e2d08fd78c2198d6d4b6005d0f1b3974e891a2ea4bd0ef02c80593
+  checksum: 3ababe9fa2b32ba6a65b3c6efd2d373be6640c379ac54ef3b837b284b8d1eb3c20601f31460c6391c651684e2cd02791ae175834f1ae059f869dad49014f31a4
   languageName: node
   linkType: hard
 
@@ -2114,8 +2132,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 8.1.0
-  resolution: "node-gyp@npm:8.1.0"
+  version: 8.2.0
+  resolution: "node-gyp@npm:8.2.0"
   dependencies:
     env-paths: ^2.2.0
     glob: ^7.1.4
@@ -2125,11 +2143,11 @@ fsevents@~2.3.1:
     npmlog: ^4.1.2
     rimraf: ^3.0.2
     semver: ^7.3.5
-    tar: ^6.1.0
+    tar: ^6.1.2
     which: ^2.0.2
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 6e014ff491cc4fdd25c41e38f9f92ab665d3b2e1ef7cd18e292aff9b293ef485c6bb93194461a5538d3bfa4b678258df974800660dd7d40865866ef3188c5481
+  checksum: 90876d42d66a58d6999eb3403cd2157a514214a1e1795e3ceee486b1172b713586db38a61e0182ac4f9d06d095c7b4b332c42c1a243aadc1549ab5552109e9c4
   languageName: node
   linkType: hard
 
@@ -3091,20 +3109,20 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"swr@npm:0.5.6":
-  version: 0.5.6
-  resolution: "swr@npm:0.5.6"
+"swr@npm:0.5.7":
+  version: 0.5.7
+  resolution: "swr@npm:0.5.7"
   dependencies:
     dequal: 2.0.2
   peerDependencies:
     react: ^16.11.0 || ^17.0.0
-  checksum: 3522cc3de9200d4209b97ac333181d7b3c040fba770b03ff41b226a2839551141c7e71080aa700b442ff8a6537d11abdf4182a4272b8e5fe57df6a1e9c2fb7fa
+  checksum: 6aaeb3ec0093a7ede7ed71fbdbdb966cfad8864ce51f6e53573bf1d731b14e99e5f3f15afa019647d75a6b2e54213f1c044ae0806b15b927021898b99d1d0c0c
   languageName: node
   linkType: hard
 
-"tar@npm:^6.0.2, tar@npm:^6.1.0":
-  version: 6.1.10
-  resolution: "tar@npm:6.1.10"
+"tar@npm:^6.0.2, tar@npm:^6.1.2":
+  version: 6.1.11
+  resolution: "tar@npm:6.1.11"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
@@ -3112,7 +3130,7 @@ fsevents@~2.3.1:
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: dfc35416b38945ad5d068fe6e9aa145cae93241f8ad680929a516a34b37a2f513ca25bbbea698451eb8983f27ce6f0ade0407f9329c0cc7c5a06f3e2e97ece29
+  checksum: f6cd9b0d7cfc2d715f28aa9911d244d91762dd905079988b1d549ea2c147281d7c9ab4adb590535665a80d5478518a0a8e8b7a9295b81043a9a1c180684f3a25
   languageName: node
   linkType: hard
 
@@ -3440,7 +3458,7 @@ typescript@4.2.4:
     react-dom: 17.0.2
     rxjs: 7.3.0
     serialize-error: 8.1.0
-    swr: 0.5.6
+    swr: 0.5.7
     typescript: 4.2.4
     url-join: 4.0.1
   languageName: unknown
