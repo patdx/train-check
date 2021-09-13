@@ -3153,14 +3153,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"swr@npm:1.0.0":
-  version: 1.0.0
-  resolution: "swr@npm:1.0.0"
+"swr@npm:1.0.1":
+  version: 1.0.1
+  resolution: "swr@npm:1.0.1"
   dependencies:
     dequal: 2.0.2
   peerDependencies:
     react: ^16.11.0 || ^17.0.0
-  checksum: 0a0503b903d4d4decb7523d4e93bfc17eb234ab6378811dbe38055a96077cda3b839244284febe1afcaa7c1fd3175f3a4e55a92c67ffe52ea9e9db230fb7a2e8
+  checksum: aac517e3cde34bbc9904fbf1f9aac79797ec0857d7ec381023ba87505e170ae2fea3689dff659112f150d7a2b6af6df6df3b7e9e6a61f4e21125834d1539f1ee
   languageName: node
   linkType: hard
 
@@ -3502,7 +3502,7 @@ typescript@4.2.4:
     react-dom: 17.0.2
     rxjs: 7.3.0
     serialize-error: 8.1.0
-    swr: 1.0.0
+    swr: 1.0.1
     typescript: 4.2.4
     url-join: 4.0.1
   languageName: unknown
