@@ -222,10 +222,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.172":
-  version: 4.14.172
-  resolution: "@types/lodash@npm:4.14.172"
-  checksum: d4b9c66aa1775ca9105f95fdaf92b8c7ee646fcb75fa8c0617020456470b140f9204335a66e152f269f9cd531634ac3d0caa3f85ce3acdad9bc6951aa6e89aae
+"@types/lodash@npm:4.14.173":
+  version: 4.14.173
+  resolution: "@types/lodash@npm:4.14.173"
+  checksum: 098ac766eb74f95d359a8e1745c173e9cd3c2a7ab7b230f6ec9f1fa78cf977b41692db6f2e5b423e0e5482d93e0407a3b8690b7fe7d41ea8e46685bbb1866809
   languageName: node
   linkType: hard
 
@@ -2860,9 +2860,9 @@ fsevents@~2.3.1:
   linkType: hard
 
 "signal-exit@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "signal-exit@npm:3.0.3"
-  checksum: f8f3fec95c8d1f9ad7e3cce07e1195f84e7a85cdcb4e825e8a2b76aa5406a039083d2bc9662b3cf40e6948262f41277047d20e6fbd58c77edced0b18fab647d8
+  version: 3.0.4
+  resolution: "signal-exit@npm:3.0.4"
+  checksum: 2ba76bf4fd7cf6a6efa99abcb9d11437e071d350c1ee47e9e9943234d324097db9bb3f162eec6852afe1f3097c2d9dbcfcf7543d110945a602fc444eb4521b44
   languageName: node
   linkType: hard
 
@@ -3482,7 +3482,7 @@ typescript@4.2.4:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:."
   dependencies:
-    "@types/lodash": 4.14.172
+    "@types/lodash": 4.14.173
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.21
