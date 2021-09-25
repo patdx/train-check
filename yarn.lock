@@ -222,10 +222,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.173":
-  version: 4.14.173
-  resolution: "@types/lodash@npm:4.14.173"
-  checksum: 098ac766eb74f95d359a8e1745c173e9cd3c2a7ab7b230f6ec9f1fa78cf977b41692db6f2e5b423e0e5482d93e0407a3b8690b7fe7d41ea8e46685bbb1866809
+"@types/lodash@npm:4.14.174":
+  version: 4.14.174
+  resolution: "@types/lodash@npm:4.14.174"
+  checksum: 101b12fe18e7ced4818f0f0340862074a2714bc770bfb07c20a71f26ca47d22548938356efa443a56bd5735879853c90e1aae3237ee9b0499b4d69cb3977d727
   languageName: node
   linkType: hard
 
@@ -1335,8 +1335,8 @@ fsevents@~2.3.1:
   linkType: hard
 
 "glob@npm:^7.1.3, glob@npm:^7.1.4":
-  version: 7.1.7
-  resolution: "glob@npm:7.1.7"
+  version: 7.2.0
+  resolution: "glob@npm:7.2.0"
   dependencies:
     fs.realpath: ^1.0.0
     inflight: ^1.0.4
@@ -1344,7 +1344,7 @@ fsevents@~2.3.1:
     minimatch: ^3.0.4
     once: ^1.3.0
     path-is-absolute: ^1.0.0
-  checksum: 352f74f08247db5420161a2f68f2bd84b53228b5fcfc9dcc37cd54d3f19ec0232495d84aeff1286d0727059e9fdc1031400e00b971bdc59e30f8f82b199c9d02
+  checksum: 1171c3d7b1f5a367499e498826cddafc642aa55ef21e810031a287d3199612a889059d7d2c276a04c636c3ac2fd5943896bfc309110b21fafaeb8a1e0a199d6e
   languageName: node
   linkType: hard
 
@@ -3482,7 +3482,7 @@ typescript@4.2.4:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:."
   dependencies:
-    "@types/lodash": 4.14.173
+    "@types/lodash": 4.14.174
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.24
