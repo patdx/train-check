@@ -222,10 +222,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.174":
-  version: 4.14.174
-  resolution: "@types/lodash@npm:4.14.174"
-  checksum: 101b12fe18e7ced4818f0f0340862074a2714bc770bfb07c20a71f26ca47d22548938356efa443a56bd5735879853c90e1aae3237ee9b0499b4d69cb3977d727
+"@types/lodash@npm:4.14.175":
+  version: 4.14.175
+  resolution: "@types/lodash@npm:4.14.175"
+  checksum: d56c57f3784ff73d84ba5d2bb1dba8f6f88f97fb36113010c4a69fd7b823e4fe855b2fbabe8d020bc723e83dc84dc1fc3fc900a6e341fd12a8aaf75f1fddeb70
   languageName: node
   linkType: hard
 
@@ -3482,7 +3482,7 @@ typescript@4.2.4:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:."
   dependencies:
-    "@types/lodash": 4.14.174
+    "@types/lodash": 4.14.175
     "@types/node": 15.3.0
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.24
