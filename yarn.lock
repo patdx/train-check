@@ -2750,12 +2750,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.3.0":
-  version: 7.3.0
-  resolution: "rxjs@npm:7.3.0"
+"rxjs@npm:7.3.1":
+  version: 7.3.1
+  resolution: "rxjs@npm:7.3.1"
   dependencies:
     tslib: ~2.1.0
-  checksum: 148b28cdc6701e5d5011079523d1f2475c82b94b6945654b5045050dd4b2e1290de26f53e8e253a9392b57d08ba7b83d97b141bb25bec124c202cd0c24f9d1e5
+  checksum: 4bbd0485cb994bdd8a6406b1ea70a5bbdf5941f461b705f5f2c77b82b098a1a093c5fa95f136e5421fff10ed057986d5382e6695df5bdee68b25af6a393e1555
   languageName: node
   linkType: hard
 
@@ -3500,7 +3500,7 @@ typescript@4.2.4:
     promise-memoize: 1.2.1
     react: 17.0.2
     react-dom: 17.0.2
-    rxjs: 7.3.0
+    rxjs: 7.3.1
     serialize-error: 8.1.0
     swr: 1.0.1
     typescript: 4.2.4
