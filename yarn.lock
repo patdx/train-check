@@ -2758,12 +2758,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"serialize-error@npm:8.1.0":
-  version: 8.1.0
-  resolution: "serialize-error@npm:8.1.0"
+"serialize-error@npm:9.0.0":
+  version: 9.0.0
+  resolution: "serialize-error@npm:9.0.0"
   dependencies:
-    type-fest: ^0.20.2
-  checksum: b22c9db390d378433b1796fd60144f5a2aef16f23cff8be59e719328e11a5220a31baf9020bb3cc2faf31901754b5683459c1824478bb1427ad6f1ea5bf70ef7
+    type-fest: ^2.5.3
+  checksum: 822ff81a4c4fae7dd4c2516cc30694ec15bf8a880264cbc5d92b7ed6cf9c3d680005bde99efd9a27284b37e087821bace30de4806f31049dd723be1de6c9c531
   languageName: node
   linkType: hard
 
@@ -3150,17 +3150,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "type-fest@npm:0.20.2"
-  checksum: 1f887bc6150e632fb772fd28e33c22a4ab036c6f484fa9ac2e2115f6cae9d62bba7ca0368e3332b539d85bd2c8391c7bff22ad410abcbc9ab3774d61e250b210
-  languageName: node
-  linkType: hard
-
 "type-fest@npm:^0.7.1":
   version: 0.7.1
   resolution: "type-fest@npm:0.7.1"
   checksum: 13aa0b28ad4e3464eb62c33e7fe5165b41305abab68222507a6f728be9fc43da2aa61d25f5422296137f7751dbd4a71d6dbd7c7030dc1d897769ef09e8c1588c
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "type-fest@npm:2.5.3"
+  checksum: 4ab7de5ce14d2451a7ef3c91746505bf5d9b0db49fc83cd57c1aee0ac7eb910c36896bc944c117e201f9f8554d98856ba0b72e32fb6436d3a928399fd51e5c1b
   languageName: node
   linkType: hard
 
@@ -3366,7 +3366,7 @@ typescript@4.2.4:
     react: 17.0.2
     react-dom: 17.0.2
     rxjs: 7.4.0
-    serialize-error: 8.1.0
+    serialize-error: 9.0.0
     swr: 1.0.1
     typescript: 4.2.4
     url-join: 4.0.1
