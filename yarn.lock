@@ -273,10 +273,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:16.11.7":
-  version: 16.11.7
-  resolution: "@types/node@npm:16.11.7"
-  checksum: edd73014790c2889177e8eee35c58a76e644c5d1cc6e19325878cdb130ce6f826b452e7ca04b2e8f7787a5c706f7fab1ba168fe1492dd6da92c780e5bd2fbaa5
+"@types/node@npm:*, @types/node@npm:16.11.8":
+  version: 16.11.8
+  resolution: "@types/node@npm:16.11.8"
+  checksum: 0b584220effafef0d6525be0093a7cde612a8be084574385e93f7ad8553cecc47e2aa2bcb1ab5ee399a2e31c8310d7e5089912a8823b3b07ac4df873917e739a
   languageName: node
   linkType: hard
 
@@ -2808,9 +2808,9 @@ fsevents@~2.3.1:
   linkType: hard
 
 "signal-exit@npm:^3.0.0":
-  version: 3.0.5
-  resolution: "signal-exit@npm:3.0.5"
-  checksum: 2e747e53f09b40f1c7c9950ce2a039e58e12f9c2eb139668e9c0a7f7a5f0463377d0589d8a6dda3ab7248b80c6325470c1c4766cf85df260cf7a9f60e63b52ec
+  version: 3.0.6
+  resolution: "signal-exit@npm:3.0.6"
+  checksum: 456a6832fad8126ab583e3315a59549873cfb2400d3d71019178fa06fc71168d07e8c19a1d9b0f5477062f4f62231c048d054bd749387a3d83be9b1ce7955d28
   languageName: node
   linkType: hard
 
@@ -3348,7 +3348,7 @@ typescript@4.2.4:
   resolution: "with-typescript@workspace:."
   dependencies:
     "@types/lodash": 4.14.177
-    "@types/node": 16.11.7
+    "@types/node": 16.11.8
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.35
     "@types/react-dom": 17.0.11
