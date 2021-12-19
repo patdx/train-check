@@ -2271,14 +2271,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"observable-hooks@npm:4.1.2":
-  version: 4.1.2
-  resolution: "observable-hooks@npm:4.1.2"
+"observable-hooks@npm:4.2.0":
+  version: 4.2.0
+  resolution: "observable-hooks@npm:4.2.0"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
     rxjs: ">=6.0.0"
-  checksum: a85da7ada74f98f3c41643bf41c7d93592cda226a61d084d774e8bafe2907046f44acacdb72685118ed9f2898b09691128e4dad29423c6455562fec0606ee2bc
+  checksum: 00870249989bf98764a68a504c954c06b12a52bc1f0227160b6cf8017b22b64ddf6746a6d30514a7926040ce024b0fb75c14d675baa0381ffefefe84b0a875d8
   languageName: node
   linkType: hard
 
@@ -3266,7 +3266,7 @@ __metadata:
     make-error-cause: 2.3.0
     next: 12.0.7
     normalize.css: 8.0.1
-    observable-hooks: 4.1.2
+    observable-hooks: 4.2.0
     path-to-regexp: 6.2.0
     prettier: 2.5.1
     promise-memoize: 1.2.1
