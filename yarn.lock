@@ -412,12 +412,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serialize-error@npm:9.0.0":
-  version: 9.0.0
-  resolution: "serialize-error@npm:9.0.0"
+"serialize-error@npm:9.1.0":
+  version: 9.1.0
+  resolution: "serialize-error@npm:9.1.0"
   dependencies:
     type-fest: ^2.5.3
-  checksum: ee9bb845599c6123b3a58c0a16028356b5f0ce18e2e3ebe59d8fb8aa46271ab74116538b59528fea81c324a0df1af54d9d30209b07b24bac00bd6df14fa8b7a4
+  checksum: f6730665a87bbd802d4e123b7510d137cf24da81748d4800dfae3cc70113d500d2179abd9a7f196e9050cf110103fca33f7ac6d7f0dec99c351c4f48934c29c7
   languageName: node
   linkType: hard
 
@@ -526,7 +526,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     rxjs: 7.5.4
-    serialize-error: 9.0.0
+    serialize-error: 9.1.0
     swr: 1.2.1
     typescript: 4.5.5
     url-join: 4.0.1
