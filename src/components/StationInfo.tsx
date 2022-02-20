@@ -3,6 +3,7 @@ import { LoadingIcon } from './LoadingIcon';
 import { Trains } from './Trains';
 import { getTrainsAsync } from '../services/lines-service';
 import useSWR from 'swr';
+import { Card } from './Card';
 
 export const StationInfo: FunctionComponent<{
   line: any;
@@ -21,12 +22,12 @@ export const StationInfo: FunctionComponent<{
   } else {
     return (
       <div>
-        <div className="card">
+        <Card>
           <Trains name="Northbound" data={data?.trainsUp} />
-        </div>
-        <div className="card">
+        </Card>
+        <Card>
           <Trains name="Southbound" data={data?.trainsDown} />
-        </div>
+        </Card>
       </div>
     );
   }

@@ -30,8 +30,8 @@ export const Pick: FunctionComponent<{
     } else {
       return (
         <div>
-          <h1 style={{ color: 'red' }}>{name}</h1>
-          <ul>{children}</ul>
+          <h1 className="text-red-700">{name}</h1>
+          <ul className="grid grid-cols-2 gap-2">{children}</ul>
         </div>
       );
     }
@@ -39,7 +39,7 @@ export const Pick: FunctionComponent<{
     //Disabled State
     return (
       <div>
-        <h1 style={{ color: 'gray' }}>{name}</h1>
+        <h1 className="text-gray-500">{name}</h1>
       </div>
     );
   } else {

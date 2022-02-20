@@ -5,6 +5,7 @@ import useSWR from 'swr';
 import { serializeError } from 'serialize-error';
 import Link from 'next/link';
 import urlJoin from 'url-join';
+import { Card } from './Card';
 
 export const LineStationPicker: FC<{
   line: any;
@@ -26,7 +27,7 @@ export const LineStationPicker: FC<{
     <div>
       {/* <pre>{JSON.stringify({ line, station })}</pre> */}
 
-      <div className="card">
+      <Card>
         <Pick
           name="Line"
           // options={lineData.data}
@@ -34,33 +35,29 @@ export const LineStationPicker: FC<{
           enabled={true}
         >
           {lineData.data?.map((option) => (
-            <Link href="/[line]" as={urlJoin('/', option.id)} key={option.id}>
-              <a>
-                <li>{option.text}</li>
-              </a>
-            </Link>
+            <li key={option.id}>
+              <Link href="/[line]" as={urlJoin('/', option.id)}>
+                <a>{option.text}</a>
+              </Link>
+            </li>
           ))}
         </Pick>
-      </div>
+      </Card>
 
-      <div className="card">
+      <Card>
         {Boolean(stationData.error) && (
           <div>Error {JSON.stringify(serializeError(stationData.error))}</div>
         )}
         <Pick name="Station" selectedId={station} enabled={line ? true : false}>
           {stationData.data?.map((option) => (
-            <Link
-              href="/[line]/[station]"
-              as={urlJoin('/', line, option.id)}
-              key={option.id}
-            >
-              <a>
-                <li>{option.text}</li>
-              </a>
-            </Link>
+            <li key={option.id}>
+              <Link href="/[line]/[station]" as={urlJoin('/', line, option.id)}>
+                <a>{option.text}</a>
+              </Link>
+            </li>
           ))}
         </Pick>
-      </div>
+      </Card>
     </div>
   );
 };

@@ -16,8 +16,8 @@ export const MainApp: NextPage = () => {
         <title>TrainCheck</title>
       </Head>
 
-      <div className="nav">
-        <div className="nav-container">
+      <div className="nav w-screen">
+        <div className="nav-container max-w-2xl h-12 mx-auto">
           <Link href="/">
             <a>
               <img
@@ -29,7 +29,8 @@ export const MainApp: NextPage = () => {
           </Link>
         </div>
       </div>
-      <div className="main-container">
+      {/* TODO: figure out why this does not align to the center of the page quite exactly */}
+      <div className="w-screen max-w-2xl px-2 py-16 mx-auto">
         <LineStationPicker line={line} station={station} />
         {Boolean(line && station) && (
           <StationInfo line={line} station={station} />
