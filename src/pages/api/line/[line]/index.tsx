@@ -3,7 +3,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { StationsApi } from '../../../../interfaces/stations-api';
 import { fetchJson } from '../../../../utils/fetch-json';
-import {firstValueFrom} from "rxjs";
+import { firstValueFrom } from 'rxjs';
 
 export default async function checkLine(
   req: NextApiRequest,

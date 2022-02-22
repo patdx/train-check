@@ -183,14 +183,16 @@ async function checkTrains(line: string, station: string) {
 
   console.log('Loading...');
 
-  const { stations, trains } = await firstValueFrom(forkJoin({
-    stations: fetchJson<StationsApi>(
-      `https://www.train-guide.westjr.co.jp/api/v3/${line}_st.json`
-    ),
-    trains: fetchJson<TrainsApi>(
-      `https://www.train-guide.westjr.co.jp/api/v3/${line}.json`
-    ),
-  }));
+  const { stations, trains } = await firstValueFrom(
+    forkJoin({
+      stations: fetchJson<StationsApi>(
+        `https://www.train-guide.westjr.co.jp/api/v3/${line}_st.json`
+      ),
+      trains: fetchJson<TrainsApi>(
+        `https://www.train-guide.westjr.co.jp/api/v3/${line}.json`
+      ),
+    })
+  );
 
   console.log('Station and Train Data Loaded!');
 
