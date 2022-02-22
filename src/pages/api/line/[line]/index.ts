@@ -1,9 +1,8 @@
 //example: https://www.train-guide.westjr.co.jp/api/v1/hokurikubiwako_st.json
 
+import ky from 'ky-universal';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { StationsApi } from '../../../../interfaces/stations-api';
-import { fetchJson } from '../../../../utils/fetch-json';
-import { firstValueFrom } from 'rxjs';
 
 export default async function checkLine(
   req: NextApiRequest,
@@ -19,7 +18,7 @@ export default async function checkLine(
 
   console.log('Loading...');
 
-  const data = await firstValueFrom(fetchJson<StationsApi>(url));
+  const data = await ky(url).json<StationsApi>();
 
   const stations = data.stations;
 

@@ -8,33 +8,33 @@ import urlJoin from 'url-join';
 import { Card } from './Card';
 
 export const LineStationPicker: FC<{
-  line: any;
-  station: any;
+  line: string;
+  station: string;
 }> = ({ line, station }) => {
-  const lineData = useSWR<any[]>('lines', getLinesAsync);
+  const resultLines = useSWR('lines', getLinesAsync);
 
-  if (lineData.error) {
-    return <div>Error {JSON.stringify(serializeError(lineData.error))}</div>;
+  if (resultLines.error) {
+    return <div>Error {JSON.stringify(serializeError(resultLines.error))}</div>;
   }
 
-  const stationData = useSWR<any[]>(
-    line,
-    (line) => line && getStationsAsync(line),
+  const resultStations = useSWR(
+    line ?? null,
+    (line) => getStationsAsync(line),
     {}
   );
 
   return (
     <div>
-      {/* <pre>{JSON.stringify({ line, station })}</pre> */}
-
       <Card>
         <Pick
           name="Line"
-          // options={lineData.data}
           selectedId={line}
+          selectedName={
+            resultLines.data?.find((item) => item.id === line)?.text
+          }
           enabled={true}
         >
-          {lineData.data?.map((option) => (
+          {resultLines.data?.map((option) => (
             <li key={option.id}>
               <Link href="/[line]" as={urlJoin('/', option.id)}>
                 <a>{option.text}</a>
@@ -45,11 +45,21 @@ export const LineStationPicker: FC<{
       </Card>
 
       <Card>
-        {Boolean(stationData.error) && (
-          <div>Error {JSON.stringify(serializeError(stationData.error))}</div>
+        {Boolean(resultStations.error) && (
+          <div>
+            Error {JSON.stringify(serializeError(resultStations.error))}
+          </div>
         )}
-        <Pick name="Station" selectedId={station} enabled={line ? true : false}>
-          {stationData.data?.map((option) => (
+        <Pick
+          name="Station"
+          selectedId={station}
+          selectedName={
+            resultStations.data?.find((item) => item.id === station)?.text
+          }
+          enabled={line ? true : false}
+          unselectHref={`/${line}`}
+        >
+          {resultStations.data?.map((option) => (
             <li key={option.id}>
               <Link href="/[line]/[station]" as={urlJoin('/', line, option.id)}>
                 <a>{option.text}</a>

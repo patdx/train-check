@@ -16,21 +16,19 @@ export const MainApp: NextPage = () => {
         <title>TrainCheck</title>
       </Head>
 
-      <div className="nav w-screen">
-        <div className="nav-container max-w-2xl h-12 mx-auto">
+      <div className="sticky top-0 bg-white shadow">
+        <div className="nav-container mx-auto max-w-2xl">
           <Link href="/">
-            <a>
-              <img
-                src="/logo.svg"
-                style={{ maxWidth: '300px' }}
-                alt={'TrainCheck'}
-              />
+            <a className="mr-auto block">
+              <h1 className="bg-gradient-to-br from-blue-700 to-blue-400 bg-clip-text p-2 text-5xl font-extrabold text-transparent">
+                Train Check
+              </h1>
             </a>
           </Link>
         </div>
       </div>
       {/* TODO: figure out why this does not align to the center of the page quite exactly */}
-      <div className="w-screen max-w-2xl px-2 py-16 mx-auto">
+      <div className="mx-auto max-w-2xl p-2">
         <LineStationPicker line={line} station={station} />
         {Boolean(line && station) && (
           <StationInfo line={line} station={station} />

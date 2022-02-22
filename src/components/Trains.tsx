@@ -13,7 +13,7 @@ export const Trains: FC<{
   return (
     <div>
       <h1>{name}</h1>
-      <table className="table">
+      <table className="my-2 w-full">
         <tbody>{trains}</tbody>
       </table>
       {data.length === 0 ? 'No trains' : null}

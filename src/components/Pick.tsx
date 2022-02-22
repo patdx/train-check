@@ -6,16 +6,53 @@ import { LoadingIcon } from './LoadingIcon';
 
 export const Pick: FunctionComponent<{
   name: string;
-  // options?: any[];
   selectedId: string;
+  selectedName?: string;
   enabled: boolean;
-}> = ({ name, selectedId, enabled, children }) => {
+  unselectHref?: string;
+}> = ({
+  name,
+  selectedId,
+  selectedName,
+  enabled,
+  children,
+  unselectHref = '/',
+}) => {
   const loading = !children || Children.count(children) === 0;
 
   // const renderedOptions =
 
-  if (!selectedId && enabled) {
-    //Active Control
+  if (selectedId && enabled) {
+    //Item has SelectedId
+    if (loading) {
+      return (
+        <div>
+          <h1>
+            {name} <LoadingIcon />
+          </h1>
+        </div>
+      );
+    } else {
+      const titleHelmet = selectedName ? (
+        <Head>
+          <title>{selectedName}</title>
+        </Head>
+      ) : null;
+
+      return (
+        <div>
+          <h1>
+            {name}{' '}
+            <Link href={unselectHref}>
+              <a>{selectedName}</a>
+            </Link>
+            {titleHelmet}
+          </h1>
+        </div>
+      );
+    }
+  } else if (!selectedId && enabled) {
+    // Active Control
     if (loading) {
       return (
         <div>
@@ -35,46 +72,12 @@ export const Pick: FunctionComponent<{
         </div>
       );
     }
-  } else if (!enabled) {
-    //Disabled State
+  } else {
+    // Disabled State
     return (
       <div>
         <h1 className="text-gray-500">{name}</h1>
       </div>
     );
-  } else {
-    //Item has SelectedId
-    if (loading) {
-      return (
-        <div>
-          <h1>
-            {name} <LoadingIcon />
-          </h1>
-        </div>
-      );
-    } else {
-      const selectedName = undefined;
-      // const selectedName = selectedId
-      //   ? options?.find((item) => item.id === selectedId)?.text
-      //   : null;
-
-      const titleHelmet = selectedName ? (
-        <Head>
-          <title>{selectedName}</title>
-        </Head>
-      ) : null;
-
-      return (
-        <div>
-          <h1>
-            {name}{' '}
-            <Link href="/">
-              <a>{selectedName}</a>
-            </Link>
-            {titleHelmet}
-          </h1>
-        </div>
-      );
-    }
   }
 };

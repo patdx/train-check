@@ -9,12 +9,12 @@ export const Train: FC<{
 
   return (
     <tr>
-      <td>
+      <td className="w-1/4 text-center">
         {train.type} to {train.boundFor}
       </td>
-      <td>{train.delayStatus}</td>
-      <td>{train.nowPosition}</td>
-      <td>
+      <td className="w-1/4 text-center">{train.delayStatus}</td>
+      <td className="w-1/4 text-center">{train.nowPosition}</td>
+      <td className="w-1/4 text-center">
         <TrainTicker stationsAway={Number(data.stationsAway)} />
       </td>
     </tr>

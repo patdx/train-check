@@ -9,7 +9,7 @@ export const StationInfo: FunctionComponent<{
   line: any;
   station: any;
 }> = ({ line, station }) => {
-  const { data, error } = useSWR(JSON.stringify({ line, station }), () =>
+  const { data, error } = useSWR({ line, station }, () =>
     getTrainsAsync(line, station)
   );
   const loading = !data;
