@@ -1132,7 +1132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky-universal@npm:^0.10.0":
+"ky-universal@npm:0.10.0":
   version: 0.10.0
   resolution: "ky-universal@npm:0.10.0"
   dependencies:
@@ -1148,7 +1148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky@npm:^0.29.0":
+"ky@npm:0.29.0":
   version: 0.29.0
   resolution: "ky@npm:0.29.0"
   checksum: f54fcb4d6ab3783e4227f66a502514021d670e684d6e1d7853595af061429739ffbf144912e4149a9ed0f54bf3ccdffd49e895f2d0ef1ea6d35cf6612eff0b31
@@ -1688,7 +1688,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.1.7":
+"prettier-plugin-tailwindcss@npm:0.1.7":
   version: 0.1.7
   resolution: "prettier-plugin-tailwindcss@npm:0.1.7"
   peerDependencies:
@@ -1744,7 +1744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.0.0-rc.0":
+"react-dom@npm:18.0.0-rc.0-next-fe905f152-20220107":
   version: 18.0.0-rc.0-next-fe905f152-20220107
   resolution: "react-dom@npm:18.0.0-rc.0-next-fe905f152-20220107"
   dependencies:
@@ -1766,7 +1766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.0.0-rc.0":
+"react@npm:18.0.0-rc.0-next-fe905f152-20220107":
   version: 18.0.0-rc.0-next-fe905f152-20220107
   resolution: "react@npm:18.0.0-rc.0-next-fe905f152-20220107"
   dependencies:
@@ -2208,18 +2208,18 @@ __metadata:
     "@types/react-dom": 17.0.11
     "@types/url-join": 4.0.1
     autoprefixer: 10.4.2
-    ky: ^0.29.0
-    ky-universal: ^0.10.0
+    ky: 0.29.0
+    ky-universal: 0.10.0
     next: 12.1.0
     normalize.css: 8.0.1
     observable-hooks: 4.2.0
     path-to-regexp: 6.2.0
     postcss: 8.4.6
     prettier: 2.5.1
-    prettier-plugin-tailwindcss: ^0.1.7
+    prettier-plugin-tailwindcss: 0.1.7
     promise-memoize: 1.2.1
-    react: ^18.0.0-rc.0
-    react-dom: ^18.0.0-rc.0
+    react: 18.0.0-rc.0-next-fe905f152-20220107
+    react-dom: 18.0.0-rc.0-next-fe905f152-20220107
     react-icons: 4.3.1
     serialize-error: 9.1.0
     swr: 1.2.2
