@@ -8,7 +8,8 @@ import { useRouter } from 'next/router';
 
 export const MainApp: NextPage = () => {
   const router = useRouter();
-  const { line, station } = router.query;
+  const line = router.query.line as string;
+  const station = router.query.station as string;
 
   return (
     <Fragment>
