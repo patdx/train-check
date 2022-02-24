@@ -1339,7 +1339,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.30, nanoid@npm:^3.2.0":
+"nanoid@npm:^3.1.30, nanoid@npm:^3.2.0, nanoid@npm:^3.3.1":
   version: 3.3.1
   resolution: "nanoid@npm:3.3.1"
   bin:
@@ -1677,7 +1677,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.6, postcss@npm:^8.4.6":
+"postcss@npm:8.4.7":
+  version: 8.4.7
+  resolution: "postcss@npm:8.4.7"
+  dependencies:
+    nanoid: ^3.3.1
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: a515ed36622edbee1d3ba153298d3b62ae9826dfa6de19204c2a6f975c8d3ad36808423b5119a9d82b78efd486de3ce35a1faf882a36ac8aa09492be4fbb7fe1
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.6":
   version: 8.4.6
   resolution: "postcss@npm:8.4.6"
   dependencies:
@@ -2214,7 +2225,7 @@ __metadata:
     normalize.css: 8.0.1
     observable-hooks: 4.2.0
     path-to-regexp: 6.2.0
-    postcss: 8.4.6
+    postcss: 8.4.7
     prettier: 2.5.1
     prettier-plugin-tailwindcss: 0.1.8
     promise-memoize: 1.2.1
