@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ky": "0.30.0",
-    "ky-universal": "0.10.0",
+    "ky-universal": "0.10.1",
     "next": "12.1.0",
     "normalize.css": "8.0.1",
     "observable-hooks": "4.2.0",

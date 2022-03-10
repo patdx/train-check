@@ -1143,19 +1143,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky-universal@npm:0.10.0":
-  version: 0.10.0
-  resolution: "ky-universal@npm:0.10.0"
+"ky-universal@npm:0.10.1":
+  version: 0.10.1
+  resolution: "ky-universal@npm:0.10.1"
   dependencies:
     abort-controller: ^3.0.0
-    node-fetch: 3.2.0
+    node-fetch: ^3.2.2
   peerDependencies:
     ky: ">=0.26.0"
     web-streams-polyfill: ">=3.0.1"
   peerDependenciesMeta:
     web-streams-polyfill:
       optional: true
-  checksum: d4848d30cd384f5d265f23d65ca7faa0639f57fa9a941d097d7298958161c7ffc49ea012dc3ad1872674a77d0e9845323eb270a1ddf1cdbff136826b7a6cc68f
+  checksum: 61459a8bf62a9c3d2f3efe7893b9a621b21a68208acae6fb7f571d64a57be802d713a1cd147928e734b82539ffab23c12c8cffd6e5b2fa550c22e9d7510035b1
   languageName: node
   linkType: hard
 
@@ -1435,14 +1435,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:3.2.0":
-  version: 3.2.0
-  resolution: "node-fetch@npm:3.2.0"
+"node-fetch@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "node-fetch@npm:3.2.2"
   dependencies:
     data-uri-to-buffer: ^4.0.0
     fetch-blob: ^3.1.4
     formdata-polyfill: ^4.0.10
-  checksum: 1c809a0f64dd11cc18b49f990440e22c471da47da2a6d6b3388a83beba9d23ba7eaca1b9bf706a792bd283b824cf1a76777910859b9c28ad33a59f2ae4e44f8e
+  checksum: 03920e3ea8ad0122c3bad3dbd1ed005773d3623ed84eebab03c9660d49721ddbc1b2d2f28a006924c258e15a1abc26a976bbfa169fa7e52cd0c7d89f227c2307
   languageName: node
   linkType: hard
 
@@ -2228,7 +2228,7 @@ __metadata:
     "@types/url-join": 4.0.1
     autoprefixer: 10.4.2
     ky: 0.30.0
-    ky-universal: 0.10.0
+    ky-universal: 0.10.1
     next: 12.1.0
     normalize.css: 8.0.1
     observable-hooks: 4.2.0
