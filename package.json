@@ -27,7 +27,7 @@
     "@types/node": "16.11.26",
     "@types/promise-memoize": "1.2.1",
     "@types/react": "17.0.41",
-    "@types/react-dom": "17.0.13",
+    "@types/react-dom": "17.0.14",
     "@types/url-join": "4.0.1",
     "autoprefixer": "10.4.4",
     "postcss": "8.4.11",
