@@ -1924,12 +1924,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serialize-error@npm:9.1.0":
-  version: 9.1.0
-  resolution: "serialize-error@npm:9.1.0"
+"serialize-error@npm:9.1.1":
+  version: 9.1.1
+  resolution: "serialize-error@npm:9.1.1"
   dependencies:
     type-fest: ^2.5.3
-  checksum: f6730665a87bbd802d4e123b7510d137cf24da81748d4800dfae3cc70113d500d2179abd9a7f196e9050cf110103fca33f7ac6d7f0dec99c351c4f48934c29c7
+  checksum: 366752f25fc416baa572420cb12604a4b00fd49bee6d3bac0b183d0541c4b7ffbbd1bc6f910364e3e7040e0ea2631d27f895be9b34f6908e490dbc3ad6a83b9f
   languageName: node
   linkType: hard
 
@@ -2247,7 +2247,7 @@ __metadata:
     react: 18.0.0-rc.2-next-b9de50d2f-20220308
     react-dom: 18.0.0-rc.2-next-b9de50d2f-20220308
     react-icons: 4.3.1
-    serialize-error: 9.1.0
+    serialize-error: 9.1.1
     swr: 1.2.2
     tailwindcss: 3.0.23
     typescript: 4.6.2
