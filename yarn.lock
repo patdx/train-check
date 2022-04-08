@@ -212,16 +212,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.15":
-  version: 17.0.15
-  resolution: "@types/react-dom@npm:17.0.15"
+"@types/react-dom@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@types/react-dom@npm:18.0.0"
   dependencies:
-    "@types/react": ^17
-  checksum: 7b90372bd7207d3860e1043ebfe10fd21fbd9ec3417a29593ca14359774830c888ba4ebb25cf0510628607496f8d35b09d23d329ea709b9311f5866185c5fd67
+    "@types/react": "*"
+  checksum: 0d8c9cb3e72aefe0dd2b58a49845a200369f01ae92f3f11f642e04efc95dfd1c9380b6592d4273dd6113fb8707947d15b66d56c75c41f39f28bd897f0c08dfa9
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.44, @types/react@npm:^17":
+"@types/react@npm:*":
+  version: 18.0.0
+  resolution: "@types/react@npm:18.0.0"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 8a9769e2cabe335c86179881577e6ca32f3a6abdd5adbe2d498e48b78d532130da828a53ef25f21915179da454654b811292e0a8191c8a81af3bf4b05f5673bd
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:17.0.44":
   version: 17.0.44
   resolution: "@types/react@npm:17.0.44"
   dependencies:
@@ -2220,7 +2231,7 @@ __metadata:
     "@types/node": 16.11.26
     "@types/promise-memoize": 1.2.1
     "@types/react": 17.0.44
-    "@types/react-dom": 17.0.15
+    "@types/react-dom": 18.0.0
     "@types/url-join": 4.0.1
     autoprefixer: 10.4.4
     ky: 0.30.0
