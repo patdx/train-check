@@ -14,7 +14,7 @@
     "next": "12.1.0",
     "normalize.css": "8.0.1",
     "observable-hooks": "4.2.0",
-    "path-to-regexp": "6.2.0",
+    "path-to-regexp": "6.2.1",
     "promise-memoize": "1.2.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
