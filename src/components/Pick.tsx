@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import React, { FunctionComponent, Children } from 'react';
+import React, { FunctionComponent, Children, ReactNode } from 'react';
 // import urlJoin from 'url-join';
 import { LoadingIcon } from './LoadingIcon';
 
@@ -10,6 +10,7 @@ export const Pick: FunctionComponent<{
   selectedName?: string;
   enabled: boolean;
   unselectHref?: string;
+  children?: ReactNode
 }> = ({
   name,
   selectedId,
