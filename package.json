@@ -11,7 +11,7 @@
   "dependencies": {
     "ky": "0.31.1",
     "ky-universal": "0.10.1",
-    "next": "12.2.4",
+    "next": "12.2.5",
     "normalize.css": "8.0.1",
     "observable-hooks": "4.2.0",
     "path-to-regexp": "6.2.1",
