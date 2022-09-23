@@ -1397,14 +1397,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"observable-hooks@npm:4.2.0":
-  version: 4.2.0
-  resolution: "observable-hooks@npm:4.2.0"
+"observable-hooks@npm:4.2.1":
+  version: 4.2.1
+  resolution: "observable-hooks@npm:4.2.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
     rxjs: ">=6.0.0"
-  checksum: 00870249989bf98764a68a504c954c06b12a52bc1f0227160b6cf8017b22b64ddf6746a6d30514a7926040ce024b0fb75c14d675baa0381ffefefe84b0a875d8
+  checksum: 2390fb3010d2249278e2280b9e87b565ea051eb810da393f2ef0886ed9415ab40e372f3d848e405b446b82684b6cf9cdec733e2afd84140bbd708d24a08a3094
   languageName: node
   linkType: hard
 
@@ -2120,7 +2120,7 @@ __metadata:
     ky-universal: 0.10.1
     next: 12.3.1
     normalize.css: 8.0.1
-    observable-hooks: 4.2.0
+    observable-hooks: 4.2.1
     path-to-regexp: 6.2.1
     postcss: 8.4.16
     prettier: 2.7.1
