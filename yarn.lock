@@ -1039,10 +1039,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky@npm:0.31.4":
-  version: 0.31.4
-  resolution: "ky@npm:0.31.4"
-  checksum: 5b1a72a5c28c68674c6f943ece7f3552233c26c34649875c7b33e7dfb4ffa2b7c861f2e846e00114cf975b3a177a72e396701673854982f85babaa5532dbf0bc
+"ky@npm:0.32.2":
+  version: 0.32.2
+  resolution: "ky@npm:0.32.2"
+  checksum: 0ca78c4fe7b143ad527c6f79e3f77b529a55d5efe7c4a400e5937ddce641f4b672d77fd18e59b59573c77df48ba71095823a0da4c7701515d4333376f06a62d9
   languageName: node
   linkType: hard
 
@@ -2144,7 +2144,7 @@ __metadata:
     "@types/react-dom": 18.0.8
     "@types/url-join": 4.0.1
     autoprefixer: 10.4.13
-    ky: 0.31.4
+    ky: 0.32.2
     ky-universal: 0.11.0
     next: 13.0.3
     normalize.css: 8.0.1
