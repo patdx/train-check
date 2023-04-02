@@ -221,14 +221,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.31":
-  version: 18.0.31
-  resolution: "@types/react@npm:18.0.31"
+"@types/react@npm:18.0.32":
+  version: 18.0.32
+  resolution: "@types/react@npm:18.0.32"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 6befbd5587e266905b50fd6bbd7c1cacd557bddf99e6a9862ca2f1d06df3dca71b9d485a37d010479730f021aab93b852d417c714de5efc2f41be0ff4c09b4db
+  checksum: c8dbce83c455e520e75f3649988f46100e3a3c0bf7241281ea5bd9067a0368290f0d7c6102e12e6ec9d649134b29a3ef4c421f376ec5aa06ed78cbdd8c144b4c
   languageName: node
   linkType: hard
 
@@ -2021,14 +2021,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:2.1.1":
-  version: 2.1.1
-  resolution: "swr@npm:2.1.1"
+"swr@npm:2.1.2":
+  version: 2.1.2
+  resolution: "swr@npm:2.1.2"
   dependencies:
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: 77a7854f87c2a3244b4047eca5d88a0f5db6cb47f783fd13b8a38f5a611940142645c943e105fbfa64aac51e642361180366107ade0454744a80d6dedbe350db
+  checksum: 90010a1a1ba3ecd699f64ef5e3de9a40c291e220803e811c46fabb858d908fd74039f4a2c668cf8fd21dbb3f9d9b3d8300915292ed9933d0e4bdac1193ba8fb8
   languageName: node
   linkType: hard
 
@@ -2240,7 +2240,7 @@ __metadata:
     "@types/lodash": 4.14.192
     "@types/node": 18.15.11
     "@types/promise-memoize": 1.2.1
-    "@types/react": 18.0.31
+    "@types/react": 18.0.32
     "@types/react-dom": 18.0.11
     "@types/url-join": 4.0.1
     autoprefixer: 10.4.14
@@ -2258,7 +2258,7 @@ __metadata:
     react-dom: 18.2.0
     react-icons: 4.8.0
     serialize-error: 11.0.0
-    swr: 2.1.1
+    swr: 2.1.2
     tailwindcss: 3.3.1
     typescript: 5.0.3
     url-join: 5.0.0
