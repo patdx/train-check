@@ -36,8 +36,12 @@ export const LineStationPicker: FC<{
         >
           {resultLines.data?.map((option) => (
             <li key={option.id}>
-              <Link href="/[line]" as={urlJoin('/', option.id)}>
-                <a>{option.text}</a>
+              <Link
+                className="text-blue-800"
+                href="/[line]"
+                as={urlJoin('/', option.id)}
+              >
+                {option.text}
               </Link>
             </li>
           ))}
@@ -61,8 +65,12 @@ export const LineStationPicker: FC<{
         >
           {resultStations.data?.map((option) => (
             <li key={option.id}>
-              <Link href="/[line]/[station]" as={urlJoin('/', line, option.id)}>
-                <a>{option.text}</a>
+              <Link
+                className="text-blue-800"
+                href="/[line]/[station]"
+                as={urlJoin('/', line, option.id)}
+              >
+                {option.text}
               </Link>
             </li>
           ))}

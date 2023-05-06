@@ -10,7 +10,7 @@ export const Pick: FunctionComponent<{
   selectedName?: string;
   enabled: boolean;
   unselectHref?: string;
-  children?: ReactNode
+  children?: ReactNode;
 }> = ({
   name,
   selectedId,
@@ -44,8 +44,8 @@ export const Pick: FunctionComponent<{
         <div>
           <h1>
             {name}{' '}
-            <Link href={unselectHref}>
-              <a>{selectedName}</a>
+            <Link href={unselectHref} className="text-blue-800">
+              {selectedName}
             </Link>
             {titleHelmet}
           </h1>

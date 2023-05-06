@@ -19,12 +19,10 @@ export const MainApp: NextPage = () => {
 
       <div className="sticky top-0 bg-white shadow">
         <div className="nav-container mx-auto max-w-2xl">
-          <Link href="/">
-            <a className="mr-auto block">
-              <h1 className="bg-gradient-to-br from-blue-700 to-blue-400 bg-clip-text p-2 text-5xl font-extrabold text-transparent">
-                Train Check
-              </h1>
-            </a>
+          <Link href="/" className="mr-auto block text-blue-800">
+            <h1 className="bg-gradient-to-br from-blue-700 to-blue-400 bg-clip-text p-2 text-5xl font-extrabold text-transparent">
+              Train Check
+            </h1>
           </Link>
         </div>
       </div>
