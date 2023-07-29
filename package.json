@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ky": "0.33.3",
-    "ky-universal": "0.11.0",
+    "ky-universal": "0.12.0",
     "next": "13.4.12",
     "normalize.css": "8.0.1",
     "observable-hooks": "4.2.2",
@@ -23,10 +23,10 @@
     "url-join": "5.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.195",
-    "@types/node": "20.4.4",
+    "@types/lodash": "4.14.196",
+    "@types/node": "20.4.5",
     "@types/promise-memoize": "1.2.1",
-    "@types/react": "18.2.15",
+    "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
     "@types/url-join": "4.0.1",
     "autoprefixer": "10.4.14",
