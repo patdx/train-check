@@ -9,7 +9,7 @@
     "prettier": "prettier . --write"
   },
   "dependencies": {
-    "ky": "1.0.0",
+    "ky": "1.0.1",
     "ky-universal": "0.12.0",
     "next": "13.4.19",
     "normalize.css": "8.0.1",
@@ -18,13 +18,13 @@
     "promise-memoize": "1.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "4.10.1",
+    "react-icons": "4.11.0",
     "swr": "2.2.2",
     "url-join": "5.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.197",
-    "@types/node": "20.5.9",
+    "@types/lodash": "4.14.198",
+    "@types/node": "20.6.0",
     "@types/promise-memoize": "1.2.1",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
