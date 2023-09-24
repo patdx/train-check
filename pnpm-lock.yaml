@@ -50,8 +50,8 @@ devDependencies:
     specifier: 20.6.4
     version: 20.6.4
   '@types/promise-memoize':
-    specifier: 1.2.1
-    version: 1.2.1
+    specifier: 1.2.2
+    version: 1.2.2
   '@types/react':
     specifier: 18.2.22
     version: 18.2.22
@@ -244,8 +244,8 @@ packages:
     resolution: {integrity: sha512-nU6d9MPY0NBUMiE/nXd2IIoC4OLvsLpwAjheoAeuzgvDZA1Cb10QYg+91AF6zQiKWRN5i1m07x6sMe0niBznoQ==}
     dev: true
 
-  /@types/promise-memoize@1.2.1:
-    resolution: {integrity: sha512-QZBczXmJZOLlefxGvMJn8Y5sn7dMNTKcjKaYJ3kNbzUDz5c9rgfk24yPnY3I5xuLd2u3SjD33KV9nA69nDiX0A==}
+  /@types/promise-memoize@1.2.2:
+    resolution: {integrity: sha512-WAOgH35Jg+vQcSQqcEEJbHMVqIlngtDmZ+YJ19tW076fY+aGajj6jSI/1OQiZlXDzjAxibLrVTfeDmGb6PacUw==}
     dev: true
 
   /@types/prop-types@15.7.5:
