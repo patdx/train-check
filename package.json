@@ -9,7 +9,7 @@
     "prettier": "prettier . --write"
   },
   "dependencies": {
-    "ky": "1.1.0",
+    "ky": "1.1.1",
     "ky-universal": "0.12.0",
     "next": "13.5.6",
     "normalize.css": "8.0.1",
@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "@types/lodash": "4.14.200",
-    "@types/node": "20.8.7",
+    "@types/node": "20.8.9",
     "@types/promise-memoize": "1.2.3",
-    "@types/react": "18.2.31",
+    "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
     "@types/url-join": "4.0.2",
     "autoprefixer": "10.4.16",
@@ -34,7 +34,7 @@
     "prettier": "3.0.3",
     "prettier-plugin-tailwindcss": "0.5.6",
     "serialize-error": "11.0.2",
-    "tailwindcss": "3.3.3",
+    "tailwindcss": "3.3.5",
     "typescript": "5.2.2"
   },
   "license": "ISC"
