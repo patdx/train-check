@@ -26,7 +26,7 @@
     "@types/lodash": "4.14.200",
     "@types/node": "20.8.10",
     "@types/promise-memoize": "1.2.3",
-    "@types/react": "18.2.34",
+    "@types/react": "18.2.35",
     "@types/react-dom": "18.2.14",
     "@types/url-join": "4.0.2",
     "autoprefixer": "10.4.16",
