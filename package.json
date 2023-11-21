@@ -23,11 +23,11 @@
     "url-join": "5.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.201",
-    "@types/node": "20.9.2",
+    "@types/lodash": "4.14.202",
+    "@types/node": "20.9.3",
     "@types/promise-memoize": "1.2.4",
-    "@types/react": "18.2.37",
-    "@types/react-dom": "18.2.15",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.16",
     "@types/url-join": "4.0.3",
     "autoprefixer": "10.4.16",
     "postcss": "8.4.31",
