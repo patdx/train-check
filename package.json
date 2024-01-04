@@ -30,7 +30,7 @@
     "@types/react-dom": "18.2.18",
     "@types/url-join": "4.0.3",
     "autoprefixer": "10.4.16",
-    "postcss": "8.4.32",
+    "postcss": "8.4.33",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.10",
     "serialize-error": "11.0.3",
