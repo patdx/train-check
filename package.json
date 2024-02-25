@@ -9,7 +9,7 @@
     "prettier": "prettier . --write"
   },
   "dependencies": {
-    "ky": "1.2.0",
+    "ky": "1.2.1",
     "ky-universal": "0.12.0",
     "next": "14.1.0",
     "normalize.css": "8.0.1",

@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   ky:
-    specifier: 1.2.0
-    version: 1.2.0
+    specifier: 1.2.1
+    version: 1.2.1
   ky-universal:
     specifier: 0.12.0
-    version: 0.12.0(ky@1.2.0)
+    version: 0.12.0(ky@1.2.1)
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -567,7 +567,7 @@ packages:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
 
-  /ky-universal@0.12.0(ky@1.2.0):
+  /ky-universal@0.12.0(ky@1.2.1):
     resolution: {integrity: sha512-dGXoWBaHXIkiph3871I9H3KAgTE+fGOTAfTdO3wxb+Mg7seBa9rmWZmK29R38s8bZMDKulyELnwusOI8odCBvQ==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -577,12 +577,12 @@ packages:
       web-streams-polyfill:
         optional: true
     dependencies:
-      ky: 1.2.0
+      ky: 1.2.1
       node-fetch: 3.3.2
     dev: false
 
-  /ky@1.2.0:
-    resolution: {integrity: sha512-dnPW+T78MuJ9tLAiF/apJV7bP7RRRCARXQxsCmsWiKLXqGtMBOgDVOFRYzCAfNe/OrRyFyor5ESgvvC+QWEqOA==}
+  /ky@1.2.1:
+    resolution: {integrity: sha512-7L6uTdeFQdmCmHCQ3I/K/bbU1OphhHkHgJcD8AJFiG70FOppdrnAnbZDcL1pxtW5mgieX/nQISEoDKxnJ5Ib2w==}
     engines: {node: '>=18'}
     dev: false
 
