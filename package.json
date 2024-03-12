@@ -23,7 +23,7 @@
     "url-join": "5.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.202",
+    "@types/lodash": "4.17.0",
     "@types/node": "20.11.26",
     "@types/promise-memoize": "1.2.4",
     "@types/react": "18.2.65",
