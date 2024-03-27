@@ -26,15 +26,15 @@
     "@types/lodash": "4.17.0",
     "@types/node": "20.11.30",
     "@types/promise-memoize": "1.2.4",
-    "@types/react": "18.2.72",
+    "@types/react": "18.2.73",
     "@types/react-dom": "18.2.22",
     "@types/url-join": "4.0.3",
     "autoprefixer": "10.4.19",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "0.5.12",
+    "prettier-plugin-tailwindcss": "0.5.13",
     "serialize-error": "11.0.3",
-    "tailwindcss": "3.4.1",
+    "tailwindcss": "3.4.2",
     "typescript": "5.4.3"
   },
   "license": "ISC"
