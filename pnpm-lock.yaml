@@ -49,8 +49,8 @@ importers:
         specifier: 4.17.4
         version: 4.17.4
       '@types/node':
-        specifier: 20.12.12
-        version: 20.12.12
+        specifier: 20.12.13
+        version: 20.12.13
       '@types/promise-memoize':
         specifier: 1.2.4
         version: 1.2.4
@@ -190,8 +190,8 @@ packages:
   '@types/lodash@4.17.4':
     resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
 
-  '@types/node@20.12.12':
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  '@types/node@20.12.13':
+    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
 
   '@types/promise-memoize@1.2.4':
     resolution: {integrity: sha512-pyQcGtfLmbT2eTq0MmqqgvzV2I4G0hFsYDWom41OQ0zDxeJhz+0/yvr9A7wIIZCjKeJ+7WcEfwVLeMil2tl3Hw==}
@@ -337,6 +337,7 @@ packages:
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -826,7 +827,7 @@ snapshots:
 
   '@types/lodash@4.17.4': {}
 
-  '@types/node@20.12.12':
+  '@types/node@20.12.13':
     dependencies:
       undici-types: 5.26.5
 
