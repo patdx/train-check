@@ -21,8 +21,8 @@ importers:
         specifier: 8.0.1
         version: 8.0.1
       observable-hooks:
-        specifier: 4.2.3
-        version: 4.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+        specifier: 4.2.4
+        version: 4.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
       path-to-regexp:
         specifier: 7.1.0
         version: 7.1.0
@@ -471,8 +471,8 @@ packages:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
 
-  observable-hooks@4.2.3:
-    resolution: {integrity: sha512-d6fYTIU+9sg1V+CT0GhgoE/ntjIqcy9DGaYGE6ELGVP4ojaWIEsaLvL/05hLOM+AL7aySN4DCTLvj6dDF9T8XA==}
+  observable-hooks@4.2.4:
+    resolution: {integrity: sha512-FdTQgyw1h5bG/QHCBIqctdBSnv9VARJCEilgpV6L2qlw1yeLqFIwPm4U15dMtl5kDmNN0hSt+Nl6iYbLFwEcQA==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -1094,7 +1094,7 @@ snapshots:
 
   object-hash@3.0.0: {}
 
-  observable-hooks@4.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1):
+  observable-hooks@4.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
