@@ -11,7 +11,7 @@
   "dependencies": {
     "ky": "1.8.1",
     "ky-universal": "0.12.0",
-    "next": "14.2.28",
+    "next": "14.2.29",
     "normalize.css": "8.0.1",
     "observable-hooks": "4.2.4",
     "path-to-regexp": "8.2.0",
@@ -23,16 +23,16 @@
     "url-join": "5.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "4.17.16",
-    "@types/node": "22.15.3",
+    "@types/lodash": "4.17.17",
+    "@types/node": "22.15.29",
     "@types/promise-memoize": "1.2.4",
-    "@types/react": "18.3.20",
+    "@types/react": "18.3.23",
     "@types/react-dom": "18.3.7",
     "@types/url-join": "4.0.3",
     "autoprefixer": "10.4.21",
-    "postcss": "8.5.3",
+    "postcss": "8.5.4",
     "prettier": "3.5.3",
-    "prettier-plugin-tailwindcss": "0.6.11",
+    "prettier-plugin-tailwindcss": "0.6.12",
     "serialize-error": "11.0.3",
     "tailwindcss": "3.4.17",
     "typescript": "5.8.3"
