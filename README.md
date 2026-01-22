@@ -1,63 +1,80 @@
-# train-check
+# Train Check
 
-2020: Refreshed this old project to work with latest version of Next.js server and
-latest JR JSON data.
+A Vue 3 application for checking train schedules, built with Vite and deployed on Cloudflare Workers.
 
-## Deploy your own
+## Tech Stack
 
-Deploy the example using [Vercel](https://vercel.com):
+- **Frontend**: Vue 3 + TypeScript + Vite
+- **Backend**: Cloudflare Workers (Hono)
+- **Styling**: Tailwind CSS
+- **Package Manager**: pnpm
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
+## Project Setup
 
-## How to use it?
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npm init next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+```sh
+pnpm install
 ```
 
-### Download manually
+## Development
 
-Download the example:
+### Frontend Development (Vite dev server)
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript
-cd with-typescript
+```sh
+pnpm dev
 ```
 
-Install it and run:
+This runs the Vue app with hot-reload. The frontend will proxy API requests to the Cloudflare Worker.
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
+### Full Stack Development (with Cloudflare Worker)
+
+```sh
+pnpm preview
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+This builds the frontend and runs both the Vue app and Cloudflare Worker together using `wrangler dev`.
 
-## Notes
+## Building
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
+```sh
+pnpm build
 ```
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+This will:
+1. Type-check the codebase
+2. Build the Vue frontend
+3. Prepare the Cloudflare Worker
 
+## Deployment
+
+```sh
+pnpm deploy
 ```
-npm install --save-dev @types/react @types/react-dom @types/node
+
+Deploys the application to Cloudflare Workers.
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and configure:
+
+- `VITE_API_URL`: API base URL (leave empty for relative URLs with Cloudflare Workers)
+
+## Recommended IDE Setup
+
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Recommended Browser Setup
+
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Linting
+
+```sh
+pnpm lint
 ```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
