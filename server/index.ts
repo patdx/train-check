@@ -82,6 +82,9 @@ function getTrainDelays(
   }
 
   const myStation = stations[myStationIndex];
+  if (!myStation) {
+    throw new Error(`Station ${stationCode} doesn't exist.`);
+  }
   const stationsUp = stations.slice(0, myStationIndex + 1); //include the home station
   const stationsDown = stations.slice(myStationIndex); //include the home station
   const stationCodes = stations.map(getStationCode);
@@ -116,12 +119,15 @@ function getTrainDelays(
       trainObj.isGoing = false;
       trainObj.goingFromIndex = null;
       trainObj.goingFrom = '';
-      trainObj.arrivingAtIndex = stationCodes.indexOf(trainObj.position[0]);
-      trainObj.arrivingAt = trainObj.position[0];
+      const pos0 = trainObj.position[0] ?? '';
+      trainObj.arrivingAtIndex = stationCodes.indexOf(pos0);
+      trainObj.arrivingAt = pos0;
     } else {
       trainObj.isGoing = true;
-      var stationIndexA = stationCodes.indexOf(trainObj.position[0]);
-      var stationIndexB = stationCodes.indexOf(trainObj.position[1]);
+      const pos0 = trainObj.position[0] ?? '';
+      const pos1 = trainObj.position[1] ?? '';
+      var stationIndexA = stationCodes.indexOf(pos0);
+      var stationIndexB = stationCodes.indexOf(pos1);
 
       if (trainObj.direction == DIRECTION.UP) {
         //choose the bigger index

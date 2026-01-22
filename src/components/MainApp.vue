@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="sticky top-0 bg-white shadow">
+    <div class="sticky top-0 bg-white shadow-sm">
       <div class="nav-container mx-auto max-w-2xl">
         <RouterLink to="/" class="mr-auto block text-blue-800">
           <h1
-            class="bg-gradient-to-br from-blue-700 to-blue-400 bg-clip-text p-2 text-5xl font-extrabold text-transparent"
+            class="bg-linear-to-br from-blue-700 to-blue-400 bg-clip-text p-2 text-5xl font-extrabold text-transparent"
           >
             Train Check
           </h1>
